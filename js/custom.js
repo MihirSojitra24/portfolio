@@ -14,10 +14,10 @@ document.onreadystatechange = function () {
 }
 
 // For Blast Animation Apply
-$(".text-zone h1, .text-zone h2").blast({
+$(".text-zone h1, .text-zone h2, .blast_animation").blast({
   delimiter: "character",
   tag: "span",
-  
+  scrollingElement: '.page',
 });
 
 a = 0;
