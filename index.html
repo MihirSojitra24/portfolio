@@ -1,0 +1,346 @@
+<!doctype html>
+<html class="no-js index" data-section-active="main" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Front-End Website Developer | Mihir Sojitra</title>
+    <meta name="description" content="Mihir Sojitra, a frontend Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript">
+    <meta name="author" content="Mihir Sojitra">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="page-topic" content="Mihir Sojitra, a award winning Front-end Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript, Progressive Enhancement" />
+    <meta name="topic" content="Mihir Sojitra, a award winning Front-end Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript, Progressive Enhancement" />
+    <meta property="og:title" content="Mihir Sojitra:A Front-end Web Developer - Ahmedabad, India" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Mihir Sojitra, a award winning Front-end Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript, Progressive Enhancement" />
+    <!-- <meta property="og:image" itemprop="image" content="social-share.png" /> -->
+    <meta property="og:site_name" content="Front-End Developer, Ahmedabad India. www.mihirsojitra.com." />
+    <meta property="og:url" content="https://mihirsojitra.com/" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mihirsojitra">
+    <meta name="twitter:creator" content="@mihirsojitra">
+    <meta name="twitter:domain" content="mihirsojitra.com">
+    <meta name="twitter:title" content="Mihir Sojitra: Front-end Web Developer Ahmedabad, India">
+    <meta name="twitter:description" content="Mihir Sojitra, a award winning Front-end Web Developer specialising in Responsive Websites | HTML5, CSS3, SVG, Creative JavaScript, Website Development">
+    <meta name="twitter:image" content="https://mihirsojitra.com/social-share.png">
+
+   <!--  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c0c0c"> -->
+    <meta name="theme-color" content="#0c0c0c">
+    <meta name="msapplication-TileColor" content="#0c0c0c">
+    <!-- <meta name="msapplication-TileImage" content="/mstile-144x144.png"> -->
+    <script>
+    // Critical JS
+    (function() {
+        var headCSS = document.getElementsByTagName("html")[0].getAttribute("class") || "";
+        headCSS.replace('no-js', 'js')
+        document.getElementsByTagName("html")[0].setAttribute("class", headCSS);
+
+
+        // Loading stylesheet
+        var ss = document.createElement("link");
+        var ref = document.getElementsByTagName("script")[0];
+        ss.rel = "stylesheet";
+        ss.href = "css/style.css";
+        // temporary non-applicable media query to load it async
+        ss.media = "only foo";
+        ref.parentNode.insertBefore(ss, ref);
+        // set media back
+        setTimeout(function() { ss.media = "all"; });
+    })();
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="fonts/fonts_stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script type="text/javascript" src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=3.8.0c"></script>
+</head>
+
+<body id="body">
+    <noscript>
+        <p class="No-jsWran"><a href="http://www.enable-javascript.com/" target="_blank">To enjoy the full website, please enable JavaScript</a></p>
+    </noscript>
+    <svg width="0" height="0" style="display:none">
+		<symbol id="MSLogo" viewBox="0 0 184.6 138">
+		<title>Mihir Sojitra's Logo</title>
+		<polygon points="40.2,121.3 40.2,133.6 2.5,111.8 2.5,24.7 40.2,2.9 78,24.7 78,68.3 40.2,90.1" />
+		<polygon points="179.6,82 179.6,96.5 179.6,111.8 141.8,133.6 104.1,111.8 141.8,90.1 104.1,68.3 104.1,24.7 141.8,2.9 179.6,24.7 141.8,46.5 179.6,68.3" />
+		<line x1="104.1" y1="24.7" x2="141.8" y2="46.5" />
+		<line x1="141.8" y1="2.9" x2="141.8" y2="46.5" />
+		<line x1="104.1" y1="68.3" x2="141.8" y2="46.5" />
+		<line x1="141.8" y1="90.1" x2="179.6" y2="68.3" />
+		<line x1="141.8" y1="90.1" x2="179.6" y2="111.8" />
+		<line x1="141.8" y1="90.1" x2="141.8" y2="133.6" />
+		<line x1="40.2" y1="90.1" x2="40.2" y2="2.9" />
+		<line x1="2.5" y1="24.7" x2="78" y2="68.3" />
+		<line x1="78" y1="24.7" x2="40.2" y2="46.5" />
+		</symbol>
+	</svg>
+	<svg width="0" height="0" style="display:none">
+		<symbol id="MSLogo2" viewBox="0 0 184.6 138">
+		<title>Mihir Sojitra's Logo</title>
+		<polygon points="40.2,121.3 40.2,133.6 2.5,111.8 2.5,24.7 40.2,2.9 78,24.7 78,68.3 40.2,90.1" />
+		<polygon points="179.6,82 179.6,96.5 179.6,111.8 141.8,133.6 104.1,111.8 141.8,90.1 104.1,68.3 104.1,24.7 141.8,2.9 179.6,24.7 141.8,46.5 179.6,68.3" />
+		<line x1="104.1" y1="24.7" x2="141.8" y2="46.5" />
+		<line x1="141.8" y1="2.9" x2="141.8" y2="46.5" />
+		<line x1="104.1" y1="68.3" x2="141.8" y2="46.5" />
+		<line x1="141.8" y1="90.1" x2="179.6" y2="68.3" />
+		<line x1="141.8" y1="90.1" x2="179.6" y2="111.8" />
+		<line x1="141.8" y1="90.1" x2="141.8" y2="133.6" />
+		<line x1="40.2" y1="90.1" x2="40.2" y2="2.9" />
+		<line x1="2.5" y1="24.7" x2="78" y2="68.3" />
+		<line x1="78" y1="24.7" x2="40.2" y2="46.5" />
+		</symbol>
+	</svg>
+	<div id="introAnim" class="introAnim preloader" role="presentation">
+		<div class="progress_body">
+			<div class="progress_svg">
+				<svg id="introAnim0" x="0" y="0" width="184.6px" height="138px" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+					<use xlink:href="#MSLogo2"></use>
+				</svg>
+			</div>
+			<div class="progress_text">loading.. please wait </div>
+			<div class="progress-bar"><div class="progress-bar_bg"><div></div></div></div>
+		</div>
+	</div>
+    
+    <script>
+	    // (function() {
+	    //     if (!window.TweenMax) {
+	    //         document.write("<script src='js/plugins/tweenmax.js'><\/script>");
+	    //     }
+	    //     if (!window.jQuery) {
+	    //         document.write("<script src='js/plugins/jquery-3.1.1.min.js'><\/script>");
+	    //     }
+	    // })();
+    </script>
+    <!-- <script src="js/init.js"></script> -->
+
+    <div id="content">
+	    <!-- Header Section Start -->
+	    <header>
+	    	<div class="main_headerBar">
+	    		<div class="my_wrapper">
+	    			<h1 class="logo" id="logo">
+	    				<svg id="mainLogo" x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+							<title>Mihir Sojitra's Logo</title>
+							<use xlink:href="#MSLogo"></use>
+						</svg>
+	    			</h1>
+	    			<button id="hamburger" aria-pressed="false" tabindex="1" class="">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</button>
+	    		</div>
+	    	</div>
+	    	<div class="mainMenu_nav">
+	    		<ul>
+	    			<li><a href="#home">Home</a><span></span></li>
+	    			<li><a href="#about">About</a><span></span></li>
+	    			<li><a href="#skills">Skills</a><span></span></li>
+	    			<li><a href="#experience">Experience</a><span></span></li>
+	    			<li><a href="#projects">Projects</a><span></span></li>
+	    			<li><a href="#contact">Contact</a><span></span></li>
+	    		</ul>
+	    	</div>
+	    </header>
+	    <!-- Header Section END -->
+
+	    <!-- Page Start -->
+	    <div class="page_main">
+	    	<div class="page_body">
+	    		<span class="tags top-tags"> &lt;html&gt; <br> </span>
+	    		<div class="page_inner_sec">
+
+	    			<!-- Section Home Start -->
+	    			<section class="home_section" id="home_section">
+	    				<div class="sec_wrapper">
+	    					<div class="home_section_logo">
+	    						<svg id="mainLogo" x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+									<title>Mihir Sojitra's Logo</title>
+									<use xlink:href="#MSLogo"></use>
+								</svg>
+	    					</div>
+	    					<div class="text-zone">
+	    						<h1 aria-label=" Hi, I’m Mihir, ui developer" class="">
+	    							Hi, <br/> I’m ABC, <br/> testing
+	    							<!-- Hi, <br/> I’m Mihir, <br/>ui developer -->
+	    						</h1>
+	    						<p>Developer / Expert </p>
+	    						<!-- <p>Front End Developer / Front End WordPress Expert </p> -->
+	    						<br/>
+	    						<a href="/contact/" rel="contact" class="btn_design">Contact me!</a>
+	    					</div>
+	    				</div>
+	    			</section>
+	    			<!-- Section Home End -->
+
+	    			<!-- Section Projects Start -->
+	    			<section class="projects_section section_full" id="projects_section">
+	    				<!-- <div class="sec_bigText">Work</div> -->
+	    				<div class="sec_wrapper">
+							<div class="text-zone">
+								<div class="sec_ttl">
+		    						<h2 aria-label="My Portfolio" class=""> Listing..</h2>
+		    						<!-- <h2 aria-label="My Portfolio" class=""> My Portfolio</h2> -->
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some more?  Visit <a rel="work" href="/portfolio/">my work</a> page.</p>
+		    					</div>
+	    						<div class="sec_btns">
+		    						<a href="/portfolio/" rel="portfolio" class="btn_design">See more!</a>
+		    					</div>
+	    					</div>
+						</div>
+					</section>
+
+					<section class="myDetails_section fl_w100" id="myDetails_section">
+						<div class="myDetails_wrapper">
+
+							<!-- About Us Sect STart -->
+							<div class="panel bg1">
+								<div class="text-zone ">
+									<div class="sec_ttl">
+										<!-- <h2 aria-label="Me, Myself & I" class=""> My panel</h2> -->
+										<h2 aria-label="Me, Myself & I" class=""> Me, Myself & I</h2>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+
+			    						<!-- <p>I’m a Front-End Developer located in Poland. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+			    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p>
+			    						<p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p> -->
+			    						<p><a rel="contact" href="/contact/">Let’s make something special.</a></p>
+			    					</div>
+		    						<!-- <div class="sec_btns">
+			    						<a href="#skill_section" rel="See more" class="btn_design box-1">See more!</a>
+			    					</div> -->
+		    					</div>
+	    					</div>
+	    					<!-- About Us Sect End -->
+
+	    					<!-- Skills Sect STart -->
+	    					<div class="panel bg2" id="skill_section">
+	    						<div class="text-zone">
+									<div class="sec_ttl">
+			    						<h2 aria-label="My Skills" class=""> My panel 2</h2>
+			    						<!-- <h2 aria-label="My Skills" class=""> My Skills</h2> -->
+			    						<!-- <p>Since beginning my journey as a freelance developer nearly 6 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
+			    						<p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
+			    						<p>I also have full-stack developer experience with popular open-source CMS like (WordPress, Drupal, Magento, Keystone.js and others) .</p>
+			    						<p>Visit my <a rel="LinkedIn" href="#">LinkedIn</a> profile for more details or just <a rel="contact" href="/contact/">contact</a> me.</p> -->
+
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+			    					</div>
+			    					<div class="skills_listing_Sec">
+			    						<div class="skill_col col1_animate">
+				    						<div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">ABC/DEF</div>
+									      	</div>
+								      	</div>
+								      	<div class="skill_col col2_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">GHI</div>
+									      	</div>
+								      	</div>
+								      	<div class="skill_col col3_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">JKL</div>
+									      	</div>
+								      	</div>
+								      	<div class="skill_col col4_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">Mnopqr</div>
+									      	</div>
+										</div>
+										<div class="skill_col col5_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">Stu</div>
+									      	</div>
+										</div>
+										<div class="skill_col col6_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">Vwe</div>
+									      	</div>
+										</div>
+										<div class="skill_col col7_animate">
+									        <div class="skill_col_wrapper">
+										       <div class="skill_box_dtls">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</div>
+										       <div class="skill_box_text">XYZ</div>
+									      	</div>
+										</div>
+								    </div>
+		    						<!-- <div class="sec_btns">
+			    						<a href="#experience_section" rel="See more" class="btn_design box-1">See more!</a>
+			    					</div> -->
+		    					</div>
+	    					</div>
+	    					<!-- Skills Sect End -->
+
+	    					<!-- Experience Sect Start -->
+	    					<div class="panel bg3" id="experience_section">
+	    						<div class="text-zone ">
+									<div class="sec_ttl">
+			    						<h2 aria-label="My Portfolio" class=""> My panel 3</h2>
+			    					</div>
+		    						<div class="sec_btns">
+			    						<a href="/portfolio/" rel="portfolio" class="btn_design box-3">See more!</a>
+			    					</div>
+		    					</div>
+	    					</div>
+	    					<div class="panel bg4">
+	    						<div class="text-zone ">
+									<div class="sec_ttl">
+			    						<h2 aria-label="My Portfolio" class=""> My panel 4</h2>
+			    					</div>
+		    						<div class="sec_btns">
+			    						<a href="/portfolio/" rel="portfolio" class="btn_design">See more!</a>
+			    					</div>
+		    					</div>
+	    					</div>
+						</div>
+					</section>
+
+	    		</div>
+	    		<span class="tags bottom-tags"> <br> &lt;/html&gt;</span>
+	    	</div>
+	    </div>
+	    <!-- Page END -->
+	</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
+
+    <!-- Blast Animtion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
+    <script src="js/Blast.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
