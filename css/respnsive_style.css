@@ -1,0 +1,130 @@
+/** Design and Developed By Mihir Sojitra **/
+
+@media only screen and (max-width: 1025px){
+	.home_section {
+	    display: flex;
+	    align-items: center;
+	    min-height: calc(100vh - 75px);
+	}
+	.latestWorks_list .latestWorks_box .btn_design {
+	    color: #ffffff;
+	    border-color: #ffffff;
+	}
+
+	/** skill_section **/
+	.skill_section .sec_wrapper {
+	    flex-direction: column;
+	    padding: 0;
+	}
+	.skill_section .text-zone{
+		padding: 0 50px;
+	    width: 100%;
+	}
+	.skills_listing_Sec {
+	    width: 100%;
+        margin-top: 50px;
+	}
+
+}
+@media only screen and (max-width: 769px){
+	h2:after {
+	    bottom: -3rem;
+	}
+	.section_full {
+	    padding: 60px 0;
+	}
+	.section_full .text-zone {
+	    padding:0 30px;
+	}
+	.sec_bigText {
+	    font-size: 12vh;
+        right: 10px;
+    	top: -20px;
+	}
+	.latestWorks_list {
+	    padding: 50px 0 0;
+	}
+	.latestWorks_list li {
+	    margin-bottom: 70px;
+	    padding: 0 40px;
+	}
+	.latestWorks_list .latestWorks_box{
+	    height: 350px;
+	    width: 100%;
+	}
+	.latestWorks_list .latestWorks_box .latestWorks_box-text-section{
+	    left: 50px;
+    	bottom: 80px;
+	}
+	.latestWorks_list li:nth-child(even) .latestWorks_box .latestWorks_box-text-section {
+	    right: 30px;
+	}
+	.latestWorks_list li:nth-child(odd) .latestWorks_box {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	}
+	.latestWorks_list li:nth-child(odd) .latestWorks_box:hover {
+	    -webkit-transform: scale(.99) translateX(0);
+	    transform: scale(.99) translateX(0);
+	}
+	
+	/** skill_section **/
+	.skill_texts li {
+	    line-height: 30px;
+	    font-size: 20px;
+	}
+	.skill_texts li:nth-child(even) {
+	    font-size: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 569px){
+	h1{font-size: 43px; line-height: 50px;}
+	.tags, .bottom-tags:before, h2:before, h2:after, .text-zone p:last-of-type:after, .text-zone p:first-of-type:before, .skill_texts li:first-of-type:before, .skill_texts li:last-of-type:after{ font-size: 15px; }
+	h2 {
+	    margin-bottom: 30px;
+	    font-size: 42px;
+	    line-height: 54px;
+	}
+	h2:before{    margin-top: -2.3rem;}
+	h2:after {bottom: -2.2rem;}
+	.text-zone p:first-of-type:before{   margin-top: -1.5rem;}
+	.latestWorks_list li {
+	    padding: 0 20px;
+	}
+	.latestWorks_list .latestWorks_box {
+	    height: 300px;
+	}
+	.latestWorks_list .latestWorks_box .latestWorks_box-text-section{
+		left: 30px;
+		bottom: 60px;
+	}
+	.latestWorks_list li:nth-child(even) .latestWorks_box .latestWorks_box-text-section {
+	    right: 30px;
+        bottom: 100px;
+	}
+	.latestWorks_list .latestWorks_box .latestWorks_box-subtitle {
+	    overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    max-width: 240px;
+	    position: relative;
+	}
+
+	.latestWorks_list .latestWorks_box .latestWorks_box-mask-number {
+	    display: none;
+	}
+
+
+	/** skill_section **/
+	.skill_texts{padding: 0 20px;}
+	.skill_texts li {
+	    line-height: 25px;
+	    font-size: 15px;
+        padding: 5px 0;
+	}
+	.skill_texts li:nth-child(even) {
+	    font-size: 25px;
+	}
+}
