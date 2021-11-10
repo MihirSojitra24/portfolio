@@ -13,6 +13,29 @@ document.onreadystatechange = function () {
   }
 }
 
+// latestWorks_list Section add and remove class on scroll
+$(document).ready(function() {
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 500) {
+         $('.latestWorks_box').removeClass('is-hidden');
+       };
+  });
+});
+
+// Backrgound Parallax JS
+document.addEventListener("mousemove", parallax);
+  function parallax(e){
+      this.querySelectorAll('.layer').forEach(layer => {
+          const speed = layer.getAttribute('data-speed')
+
+          const x = (window.innerWidth - e.pageX*speed)/100
+          const y = (window.innerHeight - e.pageY*speed)/100
+
+          layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
+  }
+
+
 // For Blast Animation Apply
 $(".text-zone h1, .text-zone h2, .blast_animation").blast({
   delimiter: "character",
