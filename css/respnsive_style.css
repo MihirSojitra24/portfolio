@@ -6,10 +6,10 @@
 	    align-items: center;
 	    min-height: calc(100vh - 75px);
 	}
-	.latestWorks_list .latestWorks_box .btn_design {
+	/*.latestWorks_list .latestWorks_box .btn_design {
 	    color: #ffffff;
 	    border-color: #ffffff;
-	}
+	}*/
 
 	/** skill_section **/
 	.skill_section .sec_wrapper {
@@ -37,7 +37,7 @@
 	    padding:0 30px;
 	}
 	.sec_bigText {
-	    font-size: 12vh;
+	    font-size: 15vw;
         right: 10px;
     	top: -20px;
 	}
