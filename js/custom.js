@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 });
 
-// Backrgound Parallax JS
+// Background Parallax JS
 document.addEventListener("mousemove", parallax);
   function parallax(e){
       this.querySelectorAll('.layer').forEach(layer => {
@@ -35,6 +35,68 @@ document.addEventListener("mousemove", parallax);
       })
   }
 
+// Theme Change
+let initialTheme = true;
+
+function toggleColors() {   
+  const root = document.documentElement;
+
+  // if(initialTheme) {
+  //   root.style.setProperty('--grayBg', 'black');
+  //   root.style.setProperty('--text-color', '#08fdfd');
+  //   root.style.setProperty('--white', '#e9e9e9');
+  //   initialTheme = false;  
+  // } else {
+  //   root.style.setProperty('--grayBg', '#e9e9e9');
+  //   root.style.setProperty('--text-color', '#595959');
+  //   root.style.setProperty('--white', '#ffffff');
+  //   initialTheme = true;
+  // }
+
+  // if(initialTheme) {
+  //   root.style.setProperty('--grayBg', '#101820FF');
+  //   root.style.setProperty('--text-color', '#FEE715FF');
+  //   root.style.setProperty('--white', '#FEE715FF');
+  //   root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
+  //   initialTheme = false;  
+  // } else {
+  //   root.style.setProperty('--grayBg', '#e9e9e9');
+  //   root.style.setProperty('--text-color', '#595959');
+  //   root.style.setProperty('--white', '#ffffff');
+  //   root.style.setProperty('--textShadow', '#a4a4a4');
+  //   initialTheme = true;
+  // }
+
+  if(initialTheme) {
+    // root.style.setProperty('--grayBg', '#1b6535');
+    // root.style.setProperty('--text-color', '#a8c66c');
+    // root.style.setProperty('--white', '#e1dd72');
+    // root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
+    // root.style.setProperty('--latestWorks_boxLayer', '#1b6535');
+    // root.style.setProperty('--black', '#a8c66c');
+     root.style.setProperty('--grayBg', '#320d3e');
+    root.style.setProperty('--text-color', '#ffd79d');
+    root.style.setProperty('--white', '#ffd79d');
+    root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
+    root.style.setProperty('--latestWorks_boxLayer', '#320d3e');
+    root.style.setProperty('--black', '#892ea6');
+    root.style.setProperty('--tags', '#892ea6');
+     root.style.setProperty('--hoverText', '#892ea6');
+     root.style.setProperty('--filter', 'hue-rotate(45deg)');
+    initialTheme = false;  
+  } else {
+    root.style.setProperty('--grayBg', '#e9e9e9');
+    root.style.setProperty('--text-color', '#595959');
+    root.style.setProperty('--white', '#ffffff');
+    root.style.setProperty('--textShadow', '#a4a4a4');
+    root.style.setProperty('--latestWorks_boxLayer', '#1c1d25');
+    root.style.setProperty('--black', '#000000');
+    root.style.setProperty('--tags', '#8d8d8d');
+    root.style.setProperty('--hoverText', '#0897fd');
+    root.style.setProperty('--filter', 'hue-rotate(0deg)');
+    initialTheme = true;
+  }
+}
 
 // For Blast Animation Apply
 $(".text-zone h1, .text-zone h2, .blast_animation").blast({
@@ -73,7 +135,7 @@ $(".blast").each(function() {
 setTimeout(function() {
   $(".blast").removeClass("animated bounceIn");
   $(".blast").css("opacity", 1);
-  $(".blast").eq(6).css("color", "#6b6b6b");
+  // $(".blast").eq(6).css("color", "#6b6b6b");
   // $(".blast").velocity("transition.perspectiveDownIn", { stagger: 50 });
 
   $(".blast").mouseenter(function() {
