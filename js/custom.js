@@ -14,6 +14,21 @@ document.onreadystatechange = function () {
 }
 
 // latestWorks_list Section add and remove class on scroll
+$("#hamburger").click(function(){
+  $("body").toggleClass("menuactive");
+});
+$(".mainMenu_nav li a").click(function(){
+  $("body").toggleClass("menuactive");
+});
+$(window).scroll(function(){
+  var sticky = $('.stickyHeader'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 50) sticky.addClass('fixedHeader');
+  else sticky.removeClass('fixedHeader');
+});
+
+// latestWorks_list Section add and remove class on scroll
 $(document).ready(function() {
   $(window).scroll(function(){
       if ($(this).scrollTop() > 500) {
@@ -34,6 +49,15 @@ document.addEventListener("mousemove", parallax);
           layer.style.transform = `translateX(${x}px) translateY(${y}px)`
       })
   }
+
+// Custom Cursor JS STart
+// let root = document.documentElement;
+
+// root.addEventListener("mousemove", e => {
+//   root.style.setProperty('--mouse-x', e.clientX + "px");
+//   root.style.setProperty('--mouse-y', e.clientY + "px");
+// });
+// Custom Cursor JS END
 
 // Theme Change
 let initialTheme = true;
@@ -68,35 +92,64 @@ function toggleColors() {
   // }
 
   if(initialTheme) {
+     root.style.setProperty('--filter', 'hue-rotate(45deg)');
+
+    // Puple Theme
+    // root.style.setProperty('--grayBg', '#320d3e');
+    // root.style.setProperty('--text-color', '#ffd79d');
+    // root.style.setProperty('--white', '#ffd79d');
+    // root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
+    // root.style.setProperty('--latestWorks_boxLayer', '#320d3e');
+    // root.style.setProperty('--black', '#892ea6');
+    // root.style.setProperty('--tags', '#892ea6');    
+
+    // Green Theme
     // root.style.setProperty('--grayBg', '#1b6535');
     // root.style.setProperty('--text-color', '#a8c66c');
     // root.style.setProperty('--white', '#e1dd72');
-    // root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
+    // root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38)');
     // root.style.setProperty('--latestWorks_boxLayer', '#1b6535');
     // root.style.setProperty('--black', '#a8c66c');
-     root.style.setProperty('--grayBg', '#320d3e');
-    root.style.setProperty('--text-color', '#ffd79d');
-    root.style.setProperty('--white', '#ffd79d');
-    root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.38%)');
-    root.style.setProperty('--latestWorks_boxLayer', '#320d3e');
-    root.style.setProperty('--black', '#892ea6');
-    root.style.setProperty('--tags', '#892ea6');
-     root.style.setProperty('--hoverText', '#892ea6');
+
+    // Yellow Theme
+    root.style.setProperty('--grayBg', '#f3ca20');
+    root.style.setProperty('--bg3', '#f3ca20');
+    root.style.setProperty('--text-color', '#000000');
+    root.style.setProperty('--white', '#000000');
+    root.style.setProperty('--tm_white', '#f3ca20');
+    root.style.setProperty('--textShadow', 'rgba(0, 0, 0, 0.34)');
+    root.style.setProperty('--latestWorks_boxLayer', '#000000');
+    root.style.setProperty('--latestWorks_text', '#f3ca20');
+    root.style.setProperty('--black', '#f3ca20');
+    root.style.setProperty('--tags', '#ffeb9a');
+     root.style.setProperty('--hoverText', '#ffffff');
+     root.style.setProperty('--number', '#ffffff');
+     root.style.setProperty('--numberMsk', '#f3ca20');
      root.style.setProperty('--filter', 'hue-rotate(45deg)');
+     root.style.setProperty('--ms', '#ffffff');
     initialTheme = false;  
-  } else {
+
+  } 
+  else {
     root.style.setProperty('--grayBg', '#e9e9e9');
+    root.style.setProperty('--bg3', '#1A2930');
     root.style.setProperty('--text-color', '#595959');
     root.style.setProperty('--white', '#ffffff');
+    root.style.setProperty('--tm_white', '#ffffff');
     root.style.setProperty('--textShadow', '#a4a4a4');
     root.style.setProperty('--latestWorks_boxLayer', '#1c1d25');
+    root.style.setProperty('--latestWorks_text', '#ffffff');
     root.style.setProperty('--black', '#000000');
     root.style.setProperty('--tags', '#8d8d8d');
     root.style.setProperty('--hoverText', '#0897fd');
+    root.style.setProperty('--number', '#ffffff');
+    root.style.setProperty('--numberMsk', '#e9e9e9');
     root.style.setProperty('--filter', 'hue-rotate(0deg)');
+    root.style.setProperty('--ms', '#8d8d8d');
     initialTheme = true;
   }
 }
+
 
 // For Blast Animation Apply
 $(".text-zone h1, .text-zone h2, .blast_animation").blast({
@@ -242,3 +295,62 @@ ScrollTrigger.create({
 
 // making the code pretty/formatted.
 // PR.prettyPrint();
+
+
+// Timeline Sec JS
+(function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline-1").timeline();
