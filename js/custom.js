@@ -127,6 +127,7 @@ function toggleColors() {
      root.style.setProperty('--numberMsk', '#f3ca20');
      root.style.setProperty('--filter', 'hue-rotate(45deg)');
      root.style.setProperty('--ms', '#ffffff');
+     root.style.setProperty('--headerbg', 'rgba(0, 0, 0, 0.64)');
     initialTheme = false;  
 
   } 
@@ -146,6 +147,7 @@ function toggleColors() {
     root.style.setProperty('--numberMsk', '#e9e9e9');
     root.style.setProperty('--filter', 'hue-rotate(0deg)');
     root.style.setProperty('--ms', '#8d8d8d');
+    root.style.setProperty('--headerbg', 'rgba(255, 255, 255, 0.64)');
     initialTheme = true;
   }
 }
