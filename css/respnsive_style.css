@@ -94,8 +94,11 @@
 	.home_section ul.social_connect{display: none;}
 	.themeChangeBtn {
 	    right: 15px;
-	    top: 14px;
+	    top: 24px;
 	    width: 22px;
+	}
+	.fixedHeader .themeChangeBtn {
+	    top: 14px;
 	}
 	.fixedHeader .main_headerBar {
 	    padding: 5px 0;
@@ -105,7 +108,7 @@
         width: 45px;
 	}
 	.main_headerBar #hamburger {
-	    top: 5px;
+	    top: 15px;
 	    padding: 5px;
 	    right: 25px;
 	}
