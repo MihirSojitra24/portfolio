@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Front-End Website Developer | Mihir Sojitra</title>
+    <title>MS 🙃 | Front-End Website Developer</title>
     <meta name="description" content="Mihir Sojitra, a frontend Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript">
     <meta name="author" content="Mihir Sojitra">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -135,9 +135,10 @@
     <!-- <script src="js/init.js"></script> -->
 
     <div id="content" class="page">
+	    <!-- <div class="mover"><div class="moverDot"></div></div> -->
     	<button class="themeChangeBtn" onclick="toggleColors()"><img src="images/bg_icons/reshot-icon13.svg" alt="icn"/></button>
 	    <!-- Header Section Start -->
-	    <header>
+	    <header class="stickyHeader">
 	    	<div class="main_headerBar">
 	    		<div class="my_wrapper">
 	    			<h1 class="logo" id="logo">
@@ -146,22 +147,39 @@
 							<use xlink:href="#MSLogo"></use>
 						</svg>
 	    			</h1>
-	    			<button id="hamburger" aria-pressed="false" tabindex="1" class="">
+	    			<!-- <button id="hamburger" aria-pressed="false" tabindex="1" class="">
 						<span class="first"></span>
 						<span class="second"></span>
 						<span class="third"></span>
-					</button>
+					</button> -->
+					<div id="hamburger" onclick="this.classList.toggle('open');">
+						<svg  viewBox="0 0 100 100">
+							<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+							<path class="line line2" d="M 20,50 H 80" />
+							<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+						</svg>
+					</div>
 	    		</div>
 	    	</div>
+	    	
 	    	<div class="mainMenu_nav">
-	    		<ul>
-	    			<li><a href="#home">Home</a><span></span></li>
-	    			<li><a href="#about">About</a><span></span></li>
-	    			<li><a href="#skills">Skills</a><span></span></li>
-	    			<li><a href="#experience">Experience</a><span></span></li>
-	    			<li><a href="#projects">Projects</a><span></span></li>
-	    			<li><a href="#contact">Contact</a><span></span></li>
+	    		<ul class="mainMenu_navUl">
+	    			<li><a href="index.html#home_section">Home</a><span></span></li>
+	    			<li><a href="index.html#about_section">About</a><span></span></li>
+	    			<li><a href="index.html#skill_section">Skills</a><span></span></li>
+	    			<li><a href="index.html#experience_section">Experience</a><span></span></li>
+	    			<li><a href="index.html#projects_section">Projects</a><span></span></li>
+	    			<li><a href="#footer">Contact</a><span></span></li>
 	    		</ul>
+	    		<div class="footerSocial">
+					<ul class="social_connect">
+						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
+						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
+						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
+						<li><a href="https://wa.me/918347075035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
+						<!-- <li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+					</ul>
+				</div>
 	    	</div>
 	    </header>
 	    <!-- Header Section END -->
@@ -214,7 +232,7 @@
 	    				<div class="sec_wrapper">
 							<div class="text-zone">
 								<div class="sec_ttl">
-		    						<h2 aria-label="My Portfolio" class=""> My Portfolio</h2>
+		    						<h2 aria-label="My Projects" class=""> My Projects</h2>
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
 		    					</div>
     					
@@ -331,6 +349,28 @@
 					</section>
 					<!-- LatestWorks Section End -->
 
+					<!-- Footer Section Start -->
+					<footer id="footer">
+						<div class="footerLogo">
+							<h1 class="logo" id="Flogo">
+			    				<svg  x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+									<title>Mihir Sojitra's Logo</title>
+									<use xlink:href="#MSLogo"></use>
+								</svg>
+			    			</h1>
+						</div>
+						<div class="footerSocial">
+							<ul class="social_connect">
+	    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
+	    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
+	    						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
+	    						<li><a href="https://wa.me/918347075035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
+	    						<!-- <li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+	    					</ul>
+						</div>
+					</footer>
+					<!-- Footer Section End -->
+
 	    		</div>
 	    		<span class="tags bottom-tags"> <br> &lt;/html&gt;</span>
 	    	</div>
@@ -346,7 +386,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
     <script src="js/Blast.js"></script>
     <script src="js/custom.js"></script>
-    <!-- <script src="js/hoveEffect.js"></script> -->
+    <script src="js/scroll_animation.js"></script>
 
 </body>
 

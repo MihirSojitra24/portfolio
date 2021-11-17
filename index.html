@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Front-End Website Developer | Mihir Sojitra</title>
+    <title>MS 🙃 | Front-End Website Developer</title>
     <meta name="description" content="Mihir Sojitra, a frontend Web Developer specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript">
     <meta name="author" content="Mihir Sojitra">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -25,11 +25,11 @@
     <meta name="twitter:description" content="Mihir Sojitra, a Front-end Web Developer specialising in Responsive Websites | HTML5, CSS3, SVG, Creative JavaScript, Website Development">
     <!-- <meta name="twitter:image" content="https://mihirsojitra.com/social-share.png"> -->
 
-   <!--  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/ms.svg">
+    <link rel="icon" type="image/svg" href="images/ms.svg" sizes="32x32">
+    <link rel="icon" type="image/svg" href="images/ms.svg" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c0c0c"> -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c0c0c">
     <meta name="theme-color" content="#0c0c0c">
     <meta name="msapplication-TileColor" content="#0c0c0c">
     <!-- <meta name="msapplication-TileImage" content="/mstile-144x144.png"> -->
@@ -75,6 +75,7 @@
 </head>
 
 <body id="body">
+
     <noscript>
         <p class="No-jsWran"><a href="http://www.enable-javascript.com/" target="_blank">To enjoy the full website, please enable JavaScript</a></p>
     </noscript>
@@ -135,9 +136,10 @@
     <!-- <script src="js/init.js"></script> -->
 
     <div id="content" class="page">
+    	<!-- <div class="mover"><div class="moverDot"></div></div> -->
     	<button class="themeChangeBtn" onclick="toggleColors()"><img src="images/bg_icons/reshot-icon13.svg" alt="icn"/></button>
 	    <!-- Header Section Start -->
-	    <header>
+	    <header class="stickyHeader">
 	    	<div class="main_headerBar">
 	    		<div class="my_wrapper">
 	    			<h1 class="logo" id="logo">
@@ -146,22 +148,46 @@
 							<use xlink:href="#MSLogo"></use>
 						</svg>
 	    			</h1>
-	    			<button id="hamburger" aria-pressed="false" tabindex="1" class="">
+	    			<!-- <button id="hamburger" aria-pressed="false" tabindex="1" class="">
 						<span class="first"></span>
 						<span class="second"></span>
 						<span class="third"></span>
-					</button>
+					</button> -->
+					<div id="hamburger" onclick="this.classList.toggle('open');">
+						<svg  viewBox="0 0 100 100">
+							<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+							<path class="line line2" d="M 20,50 H 80" />
+							<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+						</svg>
+					</div>
 	    		</div>
 	    	</div>
+	    	
 	    	<div class="mainMenu_nav">
-	    		<ul>
-	    			<li><a href="#home">Home</a><span></span></li>
-	    			<li><a href="#about">About</a><span></span></li>
-	    			<li><a href="#skills">Skills</a><span></span></li>
-	    			<li><a href="#experience">Experience</a><span></span></li>
-	    			<li><a href="#projects">Projects</a><span></span></li>
-	    			<li><a href="#contact">Contact</a><span></span></li>
+	    		<ul class="mainMenu_navUl">
+	    			<!-- <li><a href="#home_section">Abcws</a><span></span></li>
+	    			<li><a href="#about_section">Cdef</a><span></span></li>
+	    			<li><a href="#skill_section">Edfee</a><span></span></li>
+	    			<li><a href="#experience_section">Ewsfe</a><span></span></li>
+	    			<li><a href="#projects_section">Fedfe</a><span></span></li>
+	    			<li><a href="#footer">Ewsede</a><span></span></li> -->
+
+	    			<li><a href="#home_section">Home</a><span></span></li>
+	    			<li><a href="#about_section">About</a><span></span></li>
+	    			<li><a href="#skill_section">Skills</a><span></span></li>
+	    			<li><a href="#experience_section">Experience</a><span></span></li>
+	    			<li><a href="#projects_section">Projects</a><span></span></li>
+	    			<li><a href="#footer">Contact</a><span></span></li>
 	    		</ul>
+	    		<div class="footerSocial">
+					<ul class="social_connect">
+						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
+						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
+						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
+						<li><a href="https://wa.me/918347075035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
+						<!-- <li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+					</ul>
+				</div>
 	    	</div>
 	    </header>
 	    <!-- Header Section END -->
@@ -174,7 +200,14 @@
 
 	    			<!-- Section Home Start -->
 	    			<section class="home_section section_full" id="home_section">
-	    				<div class="sec_wrapper">
+    					<ul class="social_connect">
+    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
+    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
+    						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
+    						<li><a href="https://wa.me/918347075035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
+    						<!-- <li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+    					</ul>
+	    				<div class="sec_wrapper " >
 	    					<div class="home_section_logo">
 	    						<svg id="mainLogo" x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
 									<title>Mihir Sojitra's Logo</title>
@@ -183,30 +216,49 @@
 	    					</div>
 	    					<div class="text-zone">
 	    						<h1 aria-label=" Hi, I’m Mihir, ui developer" class="">
-	    							<!-- Hi, <br/> I’m ABC, <br/> testing -->
+	    							<!-- dwdw <br/> dwd <br/> testing -->
 	    							Hi, <br/> I’m Mihir, <br/>UI/UX Developer
 	    						</h1>
-	    						<!-- <p>Developer / Expert </p> -->
+	    						<!-- <p>rfgerg gg reger </p> -->
 	    						<p>Front End Developer / Front End WordPress Expert </p>
 	    						<br/>
-	    						<a href="/contact/" rel="contact" class="btn_design">Contact me!</a>
+	    						<a href="#footer" rel="contact noopener noreferrer" class="btn_design">Contact me!</a>
 	    					</div>
 	    				</div>
+	    				<div class="bg_parallax_effect">
+	    					<img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="-5" class="layer icon1" alt="icon" />
+					        <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="5" class="layer icon2" alt="icon" />
+					        <!-- <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="2" class="layer icon3" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon-time.svg" height="50px" data-speed="6" class="layer icon4" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon5.svg" height="50px" data-speed="8" class="layer icon5" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon6.svg" height="50px" data-speed="-2" class="layer icon6" alt="icon" /> -->
+					        <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="4" class="layer icon7" alt="icon" />
+					        <!-- <img src="images/bg_icons/reshot-icon8.svg" height="50px" data-speed="-9" class="layer icon8" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon-graphics.svg" height="50px" data-speed="-6" class="layer icon9" alt="icon" /> -->
+					        <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
+					        <!-- <img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="5" class="layer icon11" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon-graphic.svg" height="50px" data-speed="2" class="layer icon12" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon-graphic2.svg" height="50px" data-speed="-7" class="layer icon13" alt="icon" /> -->
+					        <!-- <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="5" class="layer icon14" alt="icon" /> -->
+					        <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
+					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
+					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
+					    </div>
 	    			</section>
 	    			<!-- Section Home End -->
 
-	    			<!-- Section Projects Start -->
-	    			<section class="projects_section section_full bg3" id="projects_section">
-	    				<div class="sec_bigText">Work</div>
+	    			<!-- Section Projects Start bg3-->
+	    			<section class="projects_section section_full hide" id="projects_section">
+	    				<div class="sec_bigText">Projects</div>
 	    				<div class="sec_wrapper">
 							<div class="text-zone">
 								<div class="sec_ttl">
 		    						<!-- <h2 aria-label="My Portfolio" class=""> Listing..</h2> -->
-		    						<h2 aria-label="My Portfolio" class=""> My Portfolio</h2>
-		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some more?  Visit <a rel="work" href="portfolio.html">my work</a> page.</p>
+		    						<h2 aria-label="Latest Works" class=""> Latest Works</h2>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some more?  Visit <a rel="work noopener noreferrer" href="portfolio.html">my work</a> page.</p>
 		    					</div>
 	    						<div class="sec_btns">
-		    						<a href="portfolio.html" rel="portfolio" class="btn_design">See more!</a>
+		    						<a href="portfolio.html" rel="portfolio noopener noreferrer" class="btn_design">See more!</a>
 		    					</div>
 	    					</div>
 						</div>
@@ -227,24 +279,23 @@
 					        <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="5" class="layer icon11" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon-graphic.svg" height="50px" data-speed="2" class="layer icon12" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon13.svg" height="50px" data-speed="-7" class="layer icon13" alt="icon" />
+					        <img src="images/bg_icons/reshot-icon-graphic2.svg" height="50px" data-speed="-7" class="layer icon13" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="5" class="layer icon14" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
 					    </div>
-	    				<div class="sec_bigText">Projects</div>
+	    				<!-- <div class="sec_bigText">Projects</div> -->
 	    				<div class="sec_wrapper">
-							<div class="text-zone">
+							<!-- <div class="text-zone">
 								<div class="sec_ttl">
-		    						<!-- <h2 aria-label="My Skills" class=""> My panel 2</h2> -->
 		    						<h2 aria-label="Latest Works" class=""> Latest Works</h2>
 
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
 		    					</div>
     					
-	    					</div>
+	    					</div> -->
 	    					<div class="latestWorks_list">
 	    						<ul class="latestWorks_list_inner">
 	    							<li>
@@ -260,7 +311,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">Docsies</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">We take a modern approach to data collection and reporting</h5>
-					    						<button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+					    						<button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -277,7 +328,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">Digital Dilemma</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">Digital Dilemma is a full-service digital agency that designs and builds apps, websites, software and platforms to connect.</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -294,7 +345,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">PL8Sales</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">Personalised Plates For Sale: Custom Number Plates For Sale</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -312,7 +363,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">Fir Diamond</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">A Wedding Jewellery Expert in Hong Kong</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -329,7 +380,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">Software Jar</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">Enhancing IT service provider profitability with high impact, niche solutions in volume markets.</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -346,7 +397,7 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">ABC</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">Lorem Ipsum..</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -356,8 +407,8 @@
 					</section>
 					<!-- LatestWorks Section End -->
 
-					<!-- Section About Us Start -->
-					<section class="about_section section_full bg1" id="about_section">
+					<!-- Section About Us Start bg1 -->
+					<section class="about_section section_full" id="about_section">
 	    				<div class="sec_bigText">About</div>
 	    				<div class="sec_wrapper">
 							<div class="text-zone ">
@@ -369,12 +420,13 @@
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p> -->
 
 		    						<p>I’m a Front-End Developer located in India. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-		    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p>
+		    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of Health & Fitnes, Love to travel, TV series and Movies. A family person,</p>
+		    						<!-- <p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p> -->
 		    						<p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
-		    						<p><a rel="contact" href="/contact/">Let’s make something special.</a></p>
+		    						<p><a rel="contact noopener noreferrer" href="#footer">Let’s make something special.</a></p>
 		    					</div>
 	    						<!-- <div class="sec_btns">
-		    						<a href="#skill_section" rel="See more" class="btn_design box-1">See more!</a>
+		    						<a href="#skill_section" rel="See more noopener noreferrer" class="btn_design box-1">See more!</a>
 		    					</div> -->
 	    					</div>
 						</div>
@@ -382,7 +434,7 @@
 					<!-- Section About Us End -->
 
 					<!-- Skills Section Start -->
-					<section class="skill_section section_full " id="skill_section">
+					<section class="skill_section section_full" id="skill_section">
 	    				<div class="sec_bigText">Skills</div>
 	    				<div class="sec_wrapper">
 							<div class="text-zone">
@@ -391,8 +443,8 @@
 		    						<h2 aria-label="My Skills" class=""> My Skills</h2>
 		    						<p>Since beginning my journey as a freelance developer nearly 6 years ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
 		    						<p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
-		    						<p>I also have full-stack developer experience with popular open-source CMS like (WordPress, Drupal, Magento, Keystone.js and others) .</p>
-		    						<p>Visit my <a rel="LinkedIn" href="#">LinkedIn</a> profile for more details or just <a rel="contact" href="/contact/">contact</a> me.</p>
+		    						<p>I also have full-stack developer experience with popular open-source CMS like (WordPress, Drupal and others).</p>
+		    						<p>Visit my <a rel="LinkedIn noopener noreferrer" href="#">LinkedIn</a> profile for more details or just <a rel="contact noopener noreferrer" href="#footer">contact</a> me.</p>
 
 		    						<!-- <p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p> -->
@@ -427,6 +479,76 @@
 					</section>
 					<!-- Skills Section End -->
 
+					<!-- Experience Section Start -->
+					<section class="experience_section section_full" id="experience_section">
+						<!-- <div class="sec_bigText">Exp</div>
+	    				<div class="sec_wrapper">
+							<div class="text-zone">
+								<div class="sec_ttl">
+		    						<h2 aria-label="My Skills" class=""> My panel 2</h2>
+		    						<h2 aria-label="My Skills" class=""> My Experience</h2>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    					</div>   					
+	    					</div>
+    					</div> -->
+    					<div class="timeline-container" id="timeline-1">
+    						<div class="sec_bigText">Exp</div>
+						  <div class="timeline-header">
+						    <h2 class="timeline-header__title">Mustafa Kemal Atatürk</h2>
+						    <h3 class="timeline-header__subtitle">FATHER OF THE TURKS</h3>
+						  </div>
+						  <div class="timeline">
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1881</h2>
+						        <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed woman, raised him and his sister.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+						        <h2 class="timeline__content-title">1893</h2>
+						        <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's superior achievement.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+						        <h2 class="timeline__content-title">1905</h2>
+						        <p class="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1908</h2>
+						        <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in Salonica andIstanbul and as a military attache in Sofia.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
+						        <h2 class="timeline__content-title">1915</h2>
+						        <p class="timeline__content-desc">In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive victories and finally repelling the invaders.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+						        <h2 class="timeline__content-title">1934</h2>
+						        <p class="timeline__content-desc">
+						          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+						          In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
+						        </p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1938</h2>
+						        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</section>
+					<!-- Experience Section End -->
+
 					<section class="myDetails_section fl_w100 hide" id="myDetails_section">
 						<div class="myDetails_wrapper">
 
@@ -443,10 +565,10 @@
 			    						<!-- <p>I’m a Front-End Developer located in Poland. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
 			    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p>
 			    						<p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p> -->
-			    						<p><a rel="contact" href="/contact/">Let’s make something special.</a></p>
+			    						<p><a rel="contact noopener noreferrer" href="/contact/">Let’s make something special.</a></p>
 			    					</div>
 		    						<!-- <div class="sec_btns">
-			    						<a href="#skill_section" rel="See more" class="btn_design box-1">See more!</a>
+			    						<a href="#skill_section" rel="See more noopener noreferrer" class="btn_design box-1">See more!</a>
 			    					</div> -->
 		    					</div>
 	    					</div>
@@ -512,7 +634,7 @@
 										</div>
 								    </div>
 		    						<!-- <div class="sec_btns">
-			    						<a href="#experience_section" rel="See more" class="btn_design box-1">See more!</a>
+			    						<a href="#experience_section" rel="See more noopener noreferrer" class="btn_design box-1">See more!</a>
 			    					</div> -->
 		    					</div>
 	    					</div>
@@ -525,7 +647,7 @@
 			    						<h2 aria-label="My Portfolio" class=""> My panel 3</h2>
 			    					</div>
 		    						<div class="sec_btns">
-			    						<a href="/portfolio/" rel="portfolio" class="btn_design box-3">See more!</a>
+			    						<a href="/portfolio/" rel="portfolio noopener noreferrer" class="btn_design box-3">See more!</a>
 			    					</div>
 		    					</div>
 	    					</div>
@@ -542,6 +664,28 @@
 						</div>
 					</section>
 
+					<!-- Footer Section Start -->
+					<footer id="footer">
+						<div class="footerLogo">
+							<h1 class="logo" id="Flogo">
+			    				<svg  x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+									<title>Mihir Sojitra's Logo</title>
+									<use xlink:href="#MSLogo"></use>
+								</svg>
+			    			</h1>
+						</div>
+						<div class="footerSocial">
+							<ul class="social_connect">
+	    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
+	    						<li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
+	    						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
+	    						<li><a href="https://wa.me/918347075035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
+	    						<!-- <li><a href="#" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+	    					</ul>
+						</div>
+					</footer>
+					<!-- Footer Section End -->
+
 	    		</div>
 	    		<span class="tags bottom-tags"> <br> &lt;/html&gt;</span>
 	    	</div>
@@ -557,6 +701,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
     <script src="js/Blast.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/scroll_animation.js"></script>
 
 </body>
 
