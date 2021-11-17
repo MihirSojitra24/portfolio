@@ -16,6 +16,7 @@
  --bg3: #1A2930;
  --number: #ffffff;
  --filter: hue-rotate(0deg);
+ --headerbg: rgba(255, 255, 255, 0.64);
 }
 
 /*html {
@@ -154,8 +155,10 @@ header {
     background-color: var(--white);
 }*/
 .fixedHeader .main_headerBar {
-    background-color: var(--white);
+    /*background-color: var(--white);*/
     padding: 15px 0;
+    background: var(--headerbg);
+    backdrop-filter: blur(10px);
 }
 .fixedHeader .main_headerBar .logo {
     display: inline-block;
