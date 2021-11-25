@@ -11,7 +11,7 @@
  --textShadow: #a4a4a4;
  --latestWorks_boxLayer: #1c1d25;
  --tags: #8d8d8d;
- --hoverText: #0897fd;
+ --hoverText: #f3ca20;
  --bg1: #1A2930;
  --bg3: #1A2930;
  --number: #ffffff;
@@ -81,6 +81,11 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 13px;
     display: block;
 }
+.progress_svg{
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
 .preloader .progress-bar {
     text-align: left;
 }
@@ -135,7 +140,8 @@ header {
 }
 .main_headerBar .my_wrapper {
     padding: 0 20px;
-    max-width: 1300px;
+    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .main_headerBar .logo {
@@ -144,6 +150,9 @@ header {
     line-height: normal;
     display: none;
     font-size: inherit;
+    font-weight: 400;
+        font-size: 50px;
+    font-family: 'Zen Tokyo Zoo', cursive;
 }
 /*.fixedHeader .main_headerBar:after{
     position: absolute;
@@ -381,7 +390,7 @@ section:after {
     left: -1rem;
     bottom: -5rem;
 }*/
-h1 {
+.home_section h1 {
    
     color: var(--white);
     font-weight: 800;
@@ -518,7 +527,7 @@ h2:after {
     margin: 0;
     /*opacity:0;-webkit-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;*/
 }
-.section_full .text-zone{padding-left:5rem}
+.section_full .text-zone{padding-left:5rem;  position: relative;  z-index: 1;}
 
 .blast {opacity: 0;display: inline-block;-webkit-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
 /*.blast:hover {color: #6b6b6b;}*/
@@ -543,6 +552,9 @@ h2:after {
 .home_section_logo {
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-weight: 400;
+    font-size: 50px;
 }
 .home_section_logo #mainLogo {
     width: 90px;
@@ -1255,8 +1267,20 @@ footer .footerLogo, .footerSocial{float: left;
     justify-content: center
 }
 footer .footerLogo #Flogo {
-    max-width: 100px;
+    /*max-width: 100px;*/
     margin-bottom: 20px;
+    margin-top: 0;
+    position: relative;
+    font-size: 70px;
+    line-height: 90px;
+    float: left;
+    width: 100%;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-weight: 400;
+    font-size: 70px;
+}
+footer .footerLogo h1:before, footer .footerLogo h1:after{
+    display: none;
 }
 
 /** Timeline Section Start **/
