@@ -120,7 +120,7 @@
 	    top: 5px;
 	}
 
-	h1{font-size: 43px; line-height: 50px;}
+	.home_section h1{font-size: 43px; line-height: 50px;}
 	.tags, .top-tags:after, .bottom-tags:before, h2:before, h2:after, .text-zone p:last-of-type:after, .text-zone p:first-of-type:before, .skill_texts li:first-of-type:before, .skill_texts li:last-of-type:after{ font-size: 15px; }
 	h2 {
 	    margin-bottom: 30px;
