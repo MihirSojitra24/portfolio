@@ -25,9 +25,9 @@
     <meta name="twitter:description" content="Mihir Sojitra, a Front-end Web Developer specialising in Responsive Websites | HTML5, CSS3, SVG, Creative JavaScript, Website Development">
     <!-- <meta name="twitter:image" content="https://mihirsojitra.com/social-share.png"> -->
 
-   <link rel="apple-touch-icon" sizes="180x180" href="images/MS_f.svg">
-    <link rel="icon" type="image/svg" href="images/MS_f.svg" sizes="32x32">
-    <link rel="icon" type="image/svg" href="images/MS_f.svg" sizes="16x16">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/MS_FAV.svg">
+    <link rel="icon" type="image/svg" href="images/MS_FAV.svg" sizes="32x32">
+    <link rel="icon" type="image/svg" href="images/MS_FAV.svg" sizes="16x16">
     <!-- <link rel="manifest" href="/manifest.json"> -->
     <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c0c0c">  -->
     <meta name="theme-color" content="#0c0c0c">
@@ -45,7 +45,7 @@
         var ss = document.createElement("link");
         var ref = document.getElementsByTagName("script")[0];
         ss.rel = "stylesheet";
-        ss.href = "css/style.css";
+        ss.href = "css/style2.css";
         // temporary non-applicable media query to load it async
         ss.media = "only foo";
         ref.parentNode.insertBefore(ss, ref);
@@ -54,7 +54,7 @@
     })();
     </script>
     <noscript>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +68,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"> -->
 
     <link rel="stylesheet" type="text/css" href="fonts/fonts_stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/respnsive_style.css">
 
     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
@@ -117,7 +117,7 @@
 				<!-- <svg id="introAnim0" x="0" y="0" width="184.6px" height="138px" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
 					<use xlink:href="#MSLogo2"></use>
 				</svg> -->
-				<img src="images/MS_f.svg" height="80px" alt="logo" />
+				<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
 				<!-- MS -->
 			</div>
 			<div class="progress_text">loading.. please wait </div>
@@ -149,7 +149,8 @@
 							<title>Mihir Sojitra's Logo</title>
 							<use xlink:href="#MSLogo"></use>
 						</svg> -->
-						<img src="images/MS_f.svg" alt="logo" />
+						<a href="index.html#content">
+						<img src="images/MS_f2_white.svg" alt="logo" /></a>
 						<!-- MS -->
 	    			</h1>
 					<div id="hamburger" onclick="this.classList.toggle('open');">
@@ -164,7 +165,7 @@
 	    	
 	    	<div class="mainMenu_nav">
 	    		<ul class="mainMenu_navUl">
-	    			<li><a href="index.html#home_section">Home</a><span></span></li>
+	    			<li><a href="index.html#content">Home</a><span></span></li>
 	    			<li><a href="index.html#about_section">About</a><span></span></li>
 	    			<li><a href="index.html#skill_section">Skills</a><span></span></li>
 	    			<li><a href="index.html#experience_section">Experience</a><span></span></li>
@@ -185,11 +186,18 @@
 	    <!-- Header Section END -->
 
 	    <!-- Page Start -->
-	    <div class="page_main">
+	    <div class="page_main portfolio_page">
 	    	<div class="page_body">
 	    		<span class="tags top-tags"> &lt;html&gt; <br> </span>
 	    		<div class="page_inner_sec">
 
+	    			<!-- <section class="" id="">
+	    				<div class="sec_wrapper " >
+	    					<div class="home_section_logo">
+								<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
+	    					</div>
+	    				</div>
+    				</section> -->
 	    			<!-- Section Projects Start -->
 	    			<!-- <section class="projects_section section_full bg3" id="projects_section">
 	    				<div class="sec_bigText">Projects</div>
@@ -228,8 +236,8 @@
 					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
 					    </div>
-	    				<div class="sec_bigText">Projects</div>
 	    				<div class="sec_wrapper">
+	    					<div class="sec_bigText">Projects</div>
 							<div class="text-zone">
 								<div class="sec_ttl">
 		    						<h2 aria-label="My Projects" class=""> My Projects</h2>
@@ -240,7 +248,7 @@
 	    					<div class="latestWorks_list">
 	    						<ul class="latestWorks_list_inner">
 	    							<li>
-	    								<a href="https://docsies.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/docsies_main.png');" class="latestWorks_box ">
+	    								<a href="https://docsies.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/docsies_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -252,12 +260,12 @@
 								            <div class="latestWorks_box-text-section">
 								                <h3 itemprop="name" class="h2 latestWorks_box-title">Docsies</h3>
 								                <h5 itemprop="description" class="latestWorks_box-subtitle">We take a modern approach to data collection and reporting</h5>
-					    						<button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+					    						<button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
 	    							<li>
-	    								<a href="https://www.digitaldilemma.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/.png');" class="latestWorks_box ">
+	    								<a href="https://www.platesales.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/pl8sales_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -267,14 +275,15 @@
 								                </div>
 								            </div>
 								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Digital Dilemma</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Digital Dilemma is a full-service digital agency that designs and builds apps, websites, software and platforms to connect.</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">PL8Sales</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Personalised Plates For Sale: Custom Number Plates For Sale</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
+	    							
 	    							<li>
-	    								<a href="https://www.platesales.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/pl8sales_main.png');" class="latestWorks_box ">
+	    								<a href="https://firdiamond.com" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/FIRJewellery_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -284,15 +293,14 @@
 								                </div>
 								            </div>
 								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">PL8Sales</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Personalised Plates For Sale: Custom Number Plates For Sale</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Fir Diamond</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">A Wedding Jewellery Expert in Hong Kong</h5>
+								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
-	    							
 	    							<li>
-	    								<a href="https://firdiamond.com" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/');" class="latestWorks_box ">
+	    								<a href="https://www.digitaldilemma.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/digitaldilemma_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -302,14 +310,15 @@
 								                </div>
 								            </div>
 								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Fir Diamond</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">A Wedding Jewellery Expert in Hong Kong</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Digital Dilemma</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Digital Dilemma is a full-service digital agency that designs and builds apps, websites, software and platforms to connect.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
+	    							
 	    							<li>
-	    								<a href="https://www.softwarejar.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/');" class="latestWorks_box ">
+	    								<a href="https://jackson.co.nz/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/jackson_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -319,14 +328,14 @@
 								                </div>
 								            </div>
 								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Software Jar</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Enhancing IT service provider profitability with high impact, niche solutions in volume markets.</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Jackson</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Creators of the LIFEGUARD® range, Jackson Industries is synonymous with safety, reliability and innovation.</h5>
+								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
 	    							<li>
-	    								<a href="#" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/');" class="latestWorks_box ">
+	    								<a href="https://www.rumbie.co/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/rumbie_main.png');" class="latestWorks_box ">
 								            <div class="latestWorks_box-mask"></div>
 								            <div class="latestWorks_box-reveal-mask"></div>
 								            <div class="latestWorks_box-mask-number">
@@ -336,9 +345,213 @@
 								                </div>
 								            </div>
 								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">ABC</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Lorem Ipsum..</h5>
-								                <button rel="Visit Website" class="btn_design mt0">Visit Website</button>
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Rumbie & Co.</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">The most amazing salon experience</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.avantifinance.co.nz/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/avantifinance_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">07</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="07" class="latestWorks_box-mask-overlay">07</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Avanti Finance</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Avanti platform helps push boundaries through design of exceptionally flexible loans.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://appurservice.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/appurservice_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">08</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="08" class="latestWorks_box-mask-overlay">08</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">AppUrService</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">AppUrService is a one stop shop platform that connects you to the professional and licensed home or commercial service providers</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.paperpinecone.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/paperpinecone_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">09</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="09" class="latestWorks_box-mask-overlay">09</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Paper Pinecone</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">the leading directory of daycare, preschool, and before/after school programs available</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="http://www.antonlembedeacademy.co.za/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/antonlembedeacademy_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">10</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="10" class="latestWorks_box-mask-overlay">10</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Anton Lembede Academy</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Mathematics, Sciences & Technology Academy</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.hellobar.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/hellobar_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">11</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="11" class="latestWorks_box-mask-overlay">11</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Hello Bar</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Websites Use to Get More Sales & Grow Their Email List</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.reactpower.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/reactpower_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">12</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="12" class="latestWorks_box-mask-overlay">12</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">React Power Solutions</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">At React Power, we offer reliable power solutions that meet the needs of your operation. Diesel generators, natural gas, and more.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://dsmrec.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/dsmrec_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">13</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="13" class="latestWorks_box-mask-overlay">13</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">DSM Recruitment Group</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Complete Labour Hire and Recruitment Solution for Construction Industry</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://rentalratings.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/rentalratings_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">14</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="14" class="latestWorks_box-mask-overlay">14</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Rental Ratings</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Finding the right rental property can be a daunting task.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="http://www.stonyriverhotel.co.nz/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/stonyriverhotel_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">15</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="15" class="latestWorks_box-mask-overlay">15</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Stony River Hotel</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">The Stony River Hotel provides quality accommodation in a historical building set.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.noworriesumbrella.co.uk/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/noworriesumbrella_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">16</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="16" class="latestWorks_box-mask-overlay">16</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">No Worries Red Umbrella Ltd</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Company providing umbrella payroll services and paying tax for freelancers, contractors and the self-employed.</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://www.massageultra.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/massageultra_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">17</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="17" class="latestWorks_box-mask-overlay">17</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Massage Ultra</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Massage Ultra is a therapeutic massage studio </h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+								            </div>
+								        </a>
+	    							</li>
+	    							<li>
+	    								<a href="https://engagedataserver.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/engagedataserver_main.png');" class="latestWorks_box ">
+								            <div class="latestWorks_box-mask"></div>
+								            <div class="latestWorks_box-reveal-mask"></div>
+								            <div class="latestWorks_box-mask-number">
+								                <div class="latestWorks_box-mask-back">18</div>
+								                <div class="latestWorks_box-mask-front">
+								                    <div data-index="18" class="latestWorks_box-mask-overlay">18</div>
+								                </div>
+								            </div>
+								            <div class="latestWorks_box-text-section">
+								                <h3 itemprop="name" class="h2 latestWorks_box-title">Engage Data Server</h3>
+								                <h5 itemprop="description" class="latestWorks_box-subtitle">Engage Practice Solutions</h5>
+								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
 								            </div>
 								        </a>
 	    							</li>
@@ -357,7 +570,9 @@
 									<title>Mihir Sojitra's Logo</title>
 									<use xlink:href="#MSLogo"></use>
 								</svg> -->
-								<img src="images/MS_f.svg" height="80px" alt="logo" />
+								<a href="index.html#content">
+									<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
+								</a>
 								<!-- MS -->
 			    			</h1>
 						</div>
