@@ -113,6 +113,7 @@ function toggleColors() {
 
     // Yellow Theme
     root.style.setProperty('--grayBg', '#f3ca20');
+    root.style.setProperty('--grayBg2', '#f3ca20');
     root.style.setProperty('--bg3', '#f3ca20');
     root.style.setProperty('--text-color', '#000000');
     root.style.setProperty('--white', '#000000');
@@ -127,27 +128,28 @@ function toggleColors() {
      root.style.setProperty('--numberMsk', '#f3ca20');
      root.style.setProperty('--filter', 'hue-rotate(45deg)');
      root.style.setProperty('--ms', '#ffffff');
-     root.style.setProperty('--headerbg', 'rgba(0, 0, 0, 0.64)');
+     root.style.setProperty('--headerbg', ' rgba(0, 0, 0, 0.42)');
     initialTheme = false;  
 
   } 
   else {
-    root.style.setProperty('--grayBg', '#e9e9e9');
+    root.style.setProperty('--grayBg', 'linear-gradient( 130deg,#ff7a18,#af002d 41.07%,#319197 76.05%)');
+    root.style.setProperty('--grayBg2', '-webkit-linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%)');
     root.style.setProperty('--bg3', '#1A2930');
-    root.style.setProperty('--text-color', '#595959');
+    root.style.setProperty('--text-color', '#ffffff');
     root.style.setProperty('--white', '#ffffff');
     root.style.setProperty('--tm_white', '#ffffff');
-    root.style.setProperty('--textShadow', '#a4a4a4');
+    root.style.setProperty('--textShadow', '#0000004a');
     root.style.setProperty('--latestWorks_boxLayer', '#1c1d25');
     root.style.setProperty('--latestWorks_text', '#ffffff');
     root.style.setProperty('--black', '#000000');
-    root.style.setProperty('--tags', '#8d8d8d');
-    root.style.setProperty('--hoverText', '#0897fd');
+    root.style.setProperty('--tags', '#08fdd8');
+    root.style.setProperty('--hoverText', '#08fdd8');
     root.style.setProperty('--number', '#ffffff');
     root.style.setProperty('--numberMsk', '#e9e9e9');
     root.style.setProperty('--filter', 'hue-rotate(0deg)');
     root.style.setProperty('--ms', '#8d8d8d');
-    root.style.setProperty('--headerbg', 'rgba(255, 255, 255, 0.64)');
+    root.style.setProperty('--headerbg', ' rgba(0, 0, 0, 0.42)');
     initialTheme = true;
   }
 }
