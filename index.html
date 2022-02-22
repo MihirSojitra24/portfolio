@@ -25,40 +25,42 @@
     <meta name="twitter:description" content="Mihir Sojitra, a Front-end Web Developer specialising in Responsive Websites | HTML5, CSS3, SVG, Creative JavaScript, Website Development">
     <meta name="twitter:image" property="og:image" content="https://mihirsojitra24.github.io/portfolio/images/Banner_MS/MS_linkedin_wallpaper2.png">
     <link property="image" href="https://mihirsojitra24.github.io/portfolio/images/Banner_MS/MS_linkedin_wallpaper2.png" />
-   <link rel="apple-touch-icon" sizes="180x180" href="images/MS_FAV.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/MS_FAV.svg">
     <link rel="icon" type="image/svg" href="images/MS_FAV.svg" sizes="32x32">
     <link rel="icon" type="image/svg" href="images/MS_FAV.svg" sizes="16x16">
     <meta name="theme-color" content="#ff7a18">
     <meta name="msapplication-TileColor" content="#ff7a18">
     <script>
-    // Critical JS
-    (function() {
-        var headCSS = document.getElementsByTagName("html")[0].getAttribute("class") || "";
-        headCSS.replace('no-js', 'js')
-        document.getElementsByTagName("html")[0].setAttribute("class", headCSS);
+        // Critical JS
+        (function() {
+            var headCSS = document.getElementsByTagName("html")[0].getAttribute("class") || "";
+            headCSS.replace('no-js', 'js')
+            document.getElementsByTagName("html")[0].setAttribute("class", headCSS);
 
 
-        // Loading stylesheet
-        var ss = document.createElement("link");
-        var ref = document.getElementsByTagName("script")[0];
-        ss.rel = "stylesheet";
-        ss.href = "css/style2.css";
-        // temporary non-applicable media query to load it async
-        ss.media = "only foo";
-        ref.parentNode.insertBefore(ss, ref);
-        // set media back
-        setTimeout(function() { ss.media = "all"; });
-    })();
+            // Loading stylesheet
+            var ss = document.createElement("link");
+            var ref = document.getElementsByTagName("script")[0];
+            ss.rel = "stylesheet";
+            ss.href = "css/style2.css";
+            // temporary non-applicable media query to load it async
+            ss.media = "only foo";
+            ref.parentNode.insertBefore(ss, ref);
+            // set media back
+            setTimeout(function() {
+                ss.media = "all";
+            });
+        })();
     </script>
     <noscript>
         <link rel="stylesheet" href="css/style2.css">
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <link rel="stylesheet" type="text/css" href="fonts/fonts_stylesheet.css">
@@ -90,7 +92,7 @@
 		<line x1="78" y1="24.7" x2="40.2" y2="46.5"></line>
 		</symbol>
 	</svg>
-	<svg width="0" height="0" style="display:none">
+    <svg width="0" height="0" style="display:none">
 		<symbol id="MSLogo2" viewBox="0 0 184.6 138">
 		<title>Mihir Sojitra's Logo</title>
 		<polygon points="40.2,121.3 40.2,133.6 2.5,111.8 2.5,24.7 40.2,2.9 78,24.7 78,68.3 40.2,90.1"></polygon>
@@ -106,341 +108,379 @@
 		<line x1="78" y1="24.7" x2="40.2" y2="46.5"></line>
 		</symbol>
 	</svg>
-	<div id="introAnim" class="introAnim preloader" role="presentation">
-		<div class="progress_body">
-			<div class="progress_svg">
-				<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
-				<!-- MS -->
-			</div>
-			<div class="progress_text">loading.. please wait </div>
-			<div class="progress-bar"><div class="progress-bar_bg"><div></div></div></div>
-		</div>
-	</div>
+    <div id="introAnim" class="introAnim preloader" role="presentation">
+        <div class="progress_body">
+            <div class="progress_svg">
+                <img src="images/MS_f2_white.svg" height="80px" alt="logo" />
+                <!-- MS -->
+            </div>
+            <div class="progress_text">loading.. please wait </div>
+            <div class="progress-bar">
+                <div class="progress-bar_bg">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="content" class="page">
-	    <!-- Header Section Start -->
-	    <header class="stickyHeader">
-    		<button class="themeChangeBtn" onclick="toggleColors()"><img src="images/bg_icons/reshot-icon13.svg" alt="icn"/></button>
+        <!-- Header Section Start -->
+        <header class="stickyHeader">
+            <button class="themeChangeBtn" onclick="toggleColors()"><img src="images/bg_icons/reshot-icon13.svg" alt="icn"/></button>
 
-	    	<div class="main_headerBar">
-	    		<div class="my_wrapper">
-	    			<h1 class="logo" id="logo">
-						<a href="#content">
-						<img src="images/MS_f2_white.svg" alt="logo" /></a>
-						<!-- MS -->
-	    			</h1>
-					<div id="hamburger" onclick="this.classList.toggle('open');">
-						<svg  viewBox="0 0 100 100">
+            <div class="main_headerBar">
+                <div class="my_wrapper">
+                    <h1 class="logo" id="logo">
+                        <a href="#content">
+                            <img src="images/MS_f2_white.svg" alt="logo" /></a>
+                        <!-- MS -->
+                    </h1>
+                    <div id="hamburger" onclick="this.classList.toggle('open');">
+                        <svg viewBox="0 0 100 100">
 							<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
 							<path class="line line2" d="M 20,50 H 80" />
 							<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
 						</svg>
-					</div>
-	    		</div>
-	    	</div>
-	    	
-	    	<div class="mainMenu_nav">
-	    		<ul class="mainMenu_navUl">
-	    			<li><a href="#content">Home</a><span></span></li>
-	    			<li><a href="#about_section">About</a><span></span></li>
-	    			<li><a href="#skill_section">Skills</a><span></span></li>
-	    			<li><a href="#experience_section">Experience</a><span></span></li>
-	    			<li><a href="#projects_section">Projects</a><span></span></li>
-	    			<li><a href="#footer">Contact</a><span></span></li>
-	    		</ul>
-	    		<div class="footerSocial">
-					<ul class="social_connect">
-						<li><a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer" ><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
-						<li><a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
-						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
-						<li><a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer"  target="_blank"><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
-						<!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
-					</ul>
-				</div>
-	    	</div>
-	    </header>
-	    <!-- Header Section END -->
+                    </div>
+                </div>
+            </div>
 
-	    <!-- Page Start -->
-	    <div class="page_main">
-	    	<div class="page_body">
-	    		<span class="tags top-tags"> &lt;html&gt; <br> </span>
-	    		<div class="page_inner_sec">
+            <div class="mainMenu_nav">
+                <ul class="mainMenu_navUl">
+                    <li><a href="#content">Home</a><span></span></li>
+                    <li><a href="#about_section">About</a><span></span></li>
+                    <li><a href="#skill_section">Skills</a><span></span></li>
+                    <li><a href="#experience_section">Experience</a><span></span></li>
+                    <li><a href="#projects_section">Projects</a><span></span></li>
+                    <li><a href="#footer">Contact</a><span></span></li>
+                </ul>
+                <div class="footerSocial">
+                    <ul class="social_connect">
+                        <li>
+                            <a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer"><img src="images/reshot-icon-skype.svg" alt="skype" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin" /></a>
+                        </li>
+                        <li>
+                            <a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer"><img src="images/reshot-icon-mailsign.svg" alt="Email" /></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp" /></a>
+                        </li>
+                        <!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section END -->
 
-	    			<!-- Section Home Start -->
-	    			<section class="home_section section_full" id="home_section">
-    					<ul class="social_connect">
-    						<li><a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
-    						<li><a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
-    						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
-    						<li><a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
-    						<!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
-    					</ul>
-	    				<div class="sec_wrapper " >
-	    					<div class="text-zone">
-	    						<h1 aria-label=" Hello, my name is Mihir Sojitra, UI/UX Developer" class="">
-	    							  Hey, <br/> I’m Mihir Sojitra. <br/>UI/UX Developer.
-	    						</h1>
-	    						<p> I'm a Sr. Executive Designer specializing in <b>creative UI/UX Development</b> with <b>Front-End Developement skills</b> + <b>Front-End WordPress Dev.</b> and <b>Freelancer</b>. You can read a bit more about me over <a href="#about_section" rel="contact noopener noreferrer">here.</a></p>
-	    						<a href="mailto:mihir.sojitra24@gmail.com" rel="contact noopener noreferrer" class="btn_design">Say Hello 👉</a>
-	    					</div>
-	    				</div>
-	    				<div class="bg_parallax_effect">
-	    					<img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="-5" class="layer icon1" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="5" class="layer icon2" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="4" class="layer icon7" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
-					    </div>
-	    			</section>
-	    			<!-- Section Home End -->
+        <!-- Page Start -->
+        <div class="page_main">
+            <div class="page_body">
+                <span class="tags top-tags"> &lt;html&gt; <br> </span>
+                <div class="page_inner_sec">
 
-	    			<!-- Section About Us Start bg1 -->
-					<section class="about_section section_full" id="about_section">
-	    				<div class="sec_wrapper">
-	    					<div class="sec_bigText">About</div>
-							<div class="text-zone ">
-								<div class="sec_ttl">
-									<h2 aria-label="Me, Myself & I" class=""> About Me</h2>
-		    						<p>Hi, My name is Mihir, located in India and I enjoy creating things that live on the internet. My interest in web designing started back in 2015 when I decided to try editing custom Websites to help businesses do better online. — turns out Front-End and create custom websites taught me a lot about HTML, CSS, JS, jQuery, Wordpres, Drupal, Angular Material & Angular! I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-		    						<p>Fast-forward to today, and I’ve had the privilege of working at a <a href="http://www.medma.net" target="_blank" rel="contact noopener noreferrer">next generation technology company</a>, a <a href="https://discus.solutions/" target="_blank" rel="contact noopener noreferrer">Business Services company</a>, and a <a href="https://www.zealousys.com/" target="_blank" rel="contact noopener noreferrer">leading mobile & web development company</a>. My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://www.onlinepsbloans.com/" target="_blank" rel="contact noopener noreferrer">Online PSB Loans Limited - India's Largest Lending Fintech Company</a> for a variety of clients.</p>
+                    <!-- Section Home Start -->
+                    <section class="home_section section_full" id="home_section">
+                        <ul class="social_connect">
+                            <li>
+                                <a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer"><img src="images/reshot-icon-skype.svg" alt="skype" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin" /></a>
+                            </li>
+                            <li>
+                                <a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer"><img src="images/reshot-icon-mailsign.svg" alt="Email" /></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer"><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp" /></a>
+                            </li>
+                            <!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+                        </ul>
+                        <div class="sec_wrapper ">
+                            <div class="text-zone">
+                                <h1 aria-label=" Hello, my name is Mihir Sojitra, UI/UX Developer" class="">
+                                    Hey, <br/> I’m Mihir Sojitra. <br/>UI/UX Developer.
+                                </h1>
+                                <p> I'm a Sr. Executive Designer specializing in <b>creative UI/UX Development</b> with <b>Front-End Developement skills</b> + <b>Front-End WordPress Dev.</b> and <b>Freelancer</b>. You can read a bit more about me over
+                                    <a href="#about_section" rel="contact noopener noreferrer">here.</a>
+                                </p>
+                                <a href="mailto:mihir.sojitra24@gmail.com" rel="contact noopener noreferrer" class="btn_design">Say Hello 👉</a>
+                            </div>
+                        </div>
+                        <div class="bg_parallax_effect">
+                            <img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="-5" class="layer icon1" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="5" class="layer icon2" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="4" class="layer icon7" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
+                        </div>
+                    </section>
+                    <!-- Section Home End -->
 
-		    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of Health & Fitness, Love to travel, Web series and Movies. A family person,</p>
-		    						<p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
-		    						<p>I currently work in India's Largest Lending Fintech Company incorporated with an objective to provide advanced technology-based financial innovations and solutions and work remotely with a selected freelance client base being open for new opportunities.</p>
+                    <!-- Section About Us Start bg1 -->
+                    <section class="about_section section_full" id="about_section">
+                        <div class="sec_wrapper">
+                            <div class="sec_bigText">About</div>
+                            <div class="text-zone ">
+                                <div class="sec_ttl">
+                                    <h2 aria-label="Me, Myself & I" class=""> About Me</h2>
+                                    <p>Hi, My name is Mihir, located in India and I enjoy creating things that live on the internet. My interest in web designing started back in 2015 when I decided to try editing custom Websites to help businesses do better
+                                        online. — turns out Front-End and create custom websites taught me a lot about HTML, CSS, JS, jQuery, Wordpres, Drupal, Angular Material & Angular! I have a serious passion for UI effects, animations and creating
+                                        intuitive, dynamic user experiences.</p>
+                                    <p>Fast-forward to today, and I’ve had the privilege of working at a <a href="http://www.medma.net" target="_blank" rel="contact noopener noreferrer">next generation technology company</a>, a <a href="https://discus.solutions/"
+                                            target="_blank" rel="contact noopener noreferrer">Business Services company</a>, and a <a href="https://www.zealousys.com/" target="_blank" rel="contact noopener noreferrer">leading mobile & web development company</a>.
+                                        My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://www.onlinepsbloans.com/" target="_blank" rel="contact noopener noreferrer">Online PSB Loans Limited - India's Largest Lending Fintech Company</a>                                        for a variety of clients.</p>
 
-		    						<p><a rel="contact noopener noreferrer" href="#footer">Let’s make something special.</a></p>
-		    					</div>
-	    					</div>
-						</div>
-					</section>
-					<!-- Section About Us End -->
+                                    <p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of Health & Fitness, Love to travel, Web series and Movies. A family person,</p>
+                                    <p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+                                    <p>I currently work in India's Largest Lending Fintech Company incorporated with an objective to provide advanced technology-based financial innovations and solutions and work remotely with a selected freelance client
+                                        base being open for new opportunities.</p>
 
-					<!-- Skills Section Start -->
-					<section class="skill_section section_full" id="skill_section">
-	    				<div class="sec_wrapper">
-	    					<div class="sec_bigText">Skills</div>
-							<div class="text-zone">
-								<div class="sec_ttl">
-		    						<h2 aria-label="My Skills" class=""> My Skills</h2>
-		    						<p>Since beginning my journey as a UI/UX developer nearly 6 years, I’ve done directly and remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
-		    						<p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium websites, blog sites, customization wordpress projects , features, animations, and coding interactive layouts.</p>
-		    						<p>I also have Front-end developer experience with popular open-source CMS like (WordPress, Drupal and others).</p>
-		    						<p>Visit my <a rel="LinkedIn noopener noreferrer" href="https://www.linkedin.com/in/mihir-sojitra-65269437/" target="_blank">LinkedIn</a> profile for more details or just <a rel="contact noopener noreferrer" href="#footer">contact</a> me.</p>
-		    						<p>Here are a few technologies I’ve been working with recently:</p>
+                                    <p><a rel="contact noopener noreferrer" href="#footer">Let’s make something special.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section About Us End -->
 
-		    					</div>
-    					
-	    					</div>
-	    					<div class="skills_listing_Sec">
-	    							<ul class="skill_texts ">
-	    								<li class="blast_animation">HTML5</li>
-	    								<li class="blast_animation">CSS3</li>
-	    								<li class="blast_animation">SCSS</li>
-	    								<li class="blast_animation">SASS</li>
-	    								<li class="blast_animation">Bootstrap</li>
-	    								<li class="blast_animation">jQuery</li>
-	    								<li class="blast_animation">JavaScript</li>
-	    								<li class="blast_animation">Angular11</li>
-	    								<li class="blast_animation">Angular-Material</li>
-	    								<li class="blast_animation">Responsive</li>
-	    								<li class="blast_animation">Mobile Friendly</li>
-	    								<li class="blast_animation">Photoshop</li>
-	    								<li class="blast_animation">Figma</li>
-	    								<li class="blast_animation">XD</li>
-	    								<li class="blast_animation">Invision</li>
-	    								<li class="blast_animation">Wordpress</li>
-	    								<li class="blast_animation">Drupal</li>
-	    								<li class="blast_animation">Git</li>
-	    								<li class="blast_animation">SVN</li>
-	    								<li class="blast_animation">FTP</li>
-	    							</ul>
-							    </div>
-						</div>
-					</section>
-					<!-- Skills Section End -->
+                    <!-- Skills Section Start -->
+                    <section class="skill_section section_full" id="skill_section">
+                        <div class="sec_wrapper">
+                            <div class="sec_bigText">Skills</div>
+                            <div class="text-zone">
+                                <div class="sec_ttl">
+                                    <h2 aria-label="My Skills" class=""> My Skills</h2>
+                                    <p>Since beginning my journey as a UI/UX developer nearly 6 years, I’ve done directly and remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business
+                                        and consumer use.</p>
+                                    <p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium websites, blog sites,
+                                        customization wordpress projects , features, animations, and coding interactive layouts.</p>
+                                    <p>I also have Front-end developer experience with popular open-source CMS like (WordPress, Drupal and others).</p>
+                                    <p>Visit my <a rel="LinkedIn noopener noreferrer" href="https://www.linkedin.com/in/mihir-sojitra-65269437/" target="_blank">LinkedIn</a> profile for more details or just <a rel="contact noopener noreferrer" href="#footer">contact</a>                                        me.</p>
+                                    <p>Here are a few technologies I’ve been working with recently:</p>
 
-	    			<!-- Section Projects Start bg3-->
-	    			<section class="projects_section section_full" id="projects_section">
-	    				<div class="sec_wrapper">
-	    					<div class="sec_bigText">Projects</div>
-							<div class="text-zone">
-								<div class="sec_ttl">
-		    						<h2 aria-label="Latest Works" class=""> Some Things I’ve Built</h2>
-		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some more?  Visit <a rel="work noopener noreferrer" href="portfolio.html">my work</a> page.</p>
-		    					</div>
-	    						
-	    					</div>
-						</div>
-					</section>
-					<!-- Section Projects END -->
-					<!-- LatestWorks Section Start -->
-					<section class="latestWorks_section section_full " id="latestWorks_section">
-						<div class="bg_parallax_effect">
-	    					<img src="images/bg_icons/reshot-icon-diamond.svg" height="50px" data-speed="-5" class="layer icon1" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon2.svg" height="50px" data-speed="5" class="layer icon2" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="2" class="layer icon3" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-time.svg" height="50px" data-speed="6" class="layer icon4" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon5.svg" height="50px" data-speed="8" class="layer icon5" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon6.svg" height="50px" data-speed="-2" class="layer icon6" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon7.svg" height="50px" data-speed="4" class="layer icon7" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon8.svg" height="50px" data-speed="-9" class="layer icon8" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-graphics.svg" height="50px" data-speed="-6" class="layer icon9" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="5" class="layer icon11" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-graphic.svg" height="50px" data-speed="2" class="layer icon12" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-graphic2.svg" height="50px" data-speed="-7" class="layer icon13" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="5" class="layer icon14" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
-					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
-					    </div>
-	    				<div class="sec_wrapper">
-	    					<div class="latestWorks_list">
-	    						<ul class="latestWorks_list_inner">
-	    							<li>
-	    								<a href="https://docsies.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/docsies_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">01</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="01" class="latestWorks_box-mask-overlay">01</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Docsies</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">We take a modern approach to data collection and reporting</h5>
-					    						<button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    							<li>
-	    								<a href="https://www.platesales.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/pl8sales_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">02</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="02" class="latestWorks_box-mask-overlay">02</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">PL8Sales</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Personalised Plates For Sale: Custom Number Plates For Sale</h5>
-								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    							
-	    							<li>
-	    								<a href="https://firdiamond.com" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/FIRJewellery_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">03</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="03" class="latestWorks_box-mask-overlay">03</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Fir Diamond</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">A Wedding Jewellery Expert in Hong Kong</h5>
-								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    							<li>
-	    								<a href="https://www.digitaldilemma.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/digitaldilemma_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">04</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="04" class="latestWorks_box-mask-overlay">04</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Digital Dilemma</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Digital Dilemma is a full-service digital agency that designs and builds apps, websites, software and platforms to connect.</h5>
-								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    							
-	    							<li>
-	    								<a href="https://jackson.co.nz/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/jackson_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">05</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="05" class="latestWorks_box-mask-overlay">05</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Jackson</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">Creators of the LIFEGUARD® range, Jackson Industries is synonymous with safety, reliability and innovation.</h5>
-								                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    							<li>
-	    								<a href="https://www.rumbie.co/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/rumbie_main.png');" class="latestWorks_box ">
-								            <div class="latestWorks_box-mask"></div>
-								            <div class="latestWorks_box-reveal-mask"></div>
-								            <div class="latestWorks_box-mask-number">
-								                <div class="latestWorks_box-mask-back">06</div>
-								                <div class="latestWorks_box-mask-front">
-								                    <div data-index="06" class="latestWorks_box-mask-overlay">06</div>
-								                </div>
-								            </div>
-								            <div class="latestWorks_box-text-section">
-								                <h3 itemprop="name" class="h2 latestWorks_box-title">Rumbie & Co.</h3>
-								                <h5 itemprop="description" class="latestWorks_box-subtitle">The most amazing salon experience</h5>
-								                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
-								            </div>
-								        </a>
-	    							</li>
-	    						</ul>
-	    						<div class="sec_btns">
-		    						Other Noteworthy Projects <a href="portfolio.html" rel="portfolio noopener noreferrer" class="btn_design">view the archive</a>
-		    					</div>
-	    					</div>
-    					</div>
-					</section>
-					<!-- LatestWorks Section End -->
+                                </div>
 
-					<!-- Footer Section Start -->
-					<footer id="footer">
-						<div class="footerLogo">
-							<h1 class="logo" id="Flogo">
-								<a href="#content">
-								<img src="images/MS_f2_white.svg" height="120px" alt="logo" /></a>
-			    			</h1>
-						</div>
-						<div class="footerSocial">
-							<ul class="social_connect">
-	    						<li><a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype"/></a></li>
-	    						<li><a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin"/></a></li>
-	    						<li><a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email"/></a></li>
-	    						<li><a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer" ><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp"/></a></li>
-	    						<!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
-	    					</ul>
-						</div>
-						<div class="copyright_text">Designed & Built by Mihir Sojitra</div>
-					</footer>
-					<!-- Footer Section End -->
+                            </div>
+                            <div class="skills_listing_Sec">
+                                <ul class="skill_texts ">
+                                    <li class="blast_animation">HTML5</li>
+                                    <li class="blast_animation">CSS3</li>
+                                    <li class="blast_animation">SCSS</li>
+                                    <li class="blast_animation">SASS</li>
+                                    <li class="blast_animation">Bootstrap</li>
+                                    <li class="blast_animation">jQuery</li>
+                                    <li class="blast_animation">JavaScript</li>
+                                    <li class="blast_animation">Angular11</li>
+                                    <li class="blast_animation">Angular-Material</li>
+                                    <li class="blast_animation">Responsive</li>
+                                    <li class="blast_animation">Mobile Friendly</li>
+                                    <li class="blast_animation">Photoshop</li>
+                                    <li class="blast_animation">Figma</li>
+                                    <li class="blast_animation">XD</li>
+                                    <li class="blast_animation">Invision</li>
+                                    <li class="blast_animation">Wordpress</li>
+                                    <li class="blast_animation">Drupal</li>
+                                    <li class="blast_animation">Git</li>
+                                    <li class="blast_animation">SVN</li>
+                                    <li class="blast_animation">FTP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Skills Section End -->
 
-	    		</div>
-	    		<span class="tags bottom-tags"> <br> &lt;/html&gt;</span>
-	    	</div>
-	    </div>
-	    <!-- Page END -->
-	</div>
+                    <!-- Section Projects Start bg3-->
+                    <section class="projects_section section_full" id="projects_section">
+                        <div class="sec_wrapper">
+                            <div class="sec_bigText">Projects</div>
+                            <div class="text-zone">
+                                <div class="sec_ttl">
+                                    <h2 aria-label="Latest Works" class=""> Some Things I’ve Built</h2>
+                                    <p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some
+                                        more? Visit <a rel="work noopener noreferrer" href="portfolio.html">my work</a> page.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section Projects END -->
+                    <!-- LatestWorks Section Start -->
+                    <section class="latestWorks_section section_full " id="latestWorks_section">
+                        <div class="bg_parallax_effect">
+                            <img src="images/bg_icons/reshot-icon-diamond.svg" height="50px" data-speed="-5" class="layer icon1" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon2.svg" height="50px" data-speed="5" class="layer icon2" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-marketing-pyramid.svg" height="50px" data-speed="2" class="layer icon3" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-time.svg" height="50px" data-speed="6" class="layer icon4" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon5.svg" height="50px" data-speed="8" class="layer icon5" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon6.svg" height="50px" data-speed="-2" class="layer icon6" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon7.svg" height="50px" data-speed="4" class="layer icon7" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon8.svg" height="50px" data-speed="-9" class="layer icon8" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-graphics.svg" height="50px" data-speed="-6" class="layer icon9" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon10.svg" height="50px" data-speed="-7" class="layer icon10" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon11.svg" height="50px" data-speed="5" class="layer icon11" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-graphic.svg" height="50px" data-speed="2" class="layer icon12" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-graphic2.svg" height="50px" data-speed="-7" class="layer icon13" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon14.svg" height="50px" data-speed="5" class="layer icon14" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon-diamond2.svg" height="50px" data-speed="2" class="layer icon15" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
+                            <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
+                        </div>
+                        <div class="sec_wrapper">
+                            <div class="latestWorks_list">
+                                <ul class="latestWorks_list_inner">
+                                    <li>
+                                        <a href="https://docsies.com/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/docsies_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">01</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="01" class="latestWorks_box-mask-overlay">01</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">Docsies</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">We take a modern approach to data collection and reporting</h5>
+                                                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.platesales.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/pl8sales_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">02</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="02" class="latestWorks_box-mask-overlay">02</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">PL8Sales</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">Personalised Plates For Sale: Custom Number Plates For Sale</h5>
+                                                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://firdiamond.com" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/FIRJewellery_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">03</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="03" class="latestWorks_box-mask-overlay">03</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">Fir Diamond</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">A Wedding Jewellery Expert in Hong Kong</h5>
+                                                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.digitaldilemma.com.au/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/digitaldilemma_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">04</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="04" class="latestWorks_box-mask-overlay">04</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">Digital Dilemma</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">Digital Dilemma is a full-service digital agency that designs and builds apps, websites, software and platforms to connect.</h5>
+                                                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://jackson.co.nz/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/jackson_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">05</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="05" class="latestWorks_box-mask-overlay">05</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">Jackson</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">Creators of the LIFEGUARD® range, Jackson Industries is synonymous with safety, reliability and innovation.</h5>
+                                                <button rel="Visit Website  noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.rumbie.co/" target="_blank" rel="noopener noreferrer nofollow" style="background-image: url('images/projects_img/rumbie_main.png');" class="latestWorks_box ">
+                                            <div class="latestWorks_box-mask"></div>
+                                            <div class="latestWorks_box-reveal-mask"></div>
+                                            <div class="latestWorks_box-mask-number">
+                                                <div class="latestWorks_box-mask-back">06</div>
+                                                <div class="latestWorks_box-mask-front">
+                                                    <div data-index="06" class="latestWorks_box-mask-overlay">06</div>
+                                                </div>
+                                            </div>
+                                            <div class="latestWorks_box-text-section">
+                                                <h3 itemprop="name" class="h2 latestWorks_box-title">Rumbie & Co.</h3>
+                                                <h5 itemprop="description" class="latestWorks_box-subtitle">The most amazing salon experience</h5>
+                                                <button rel="Visit Website noopener noreferrer" class="btn_design mt0">Visit Website</button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="sec_btns">
+                                    Other Noteworthy Projects <a href="portfolio.html" rel="portfolio noopener noreferrer" class="btn_design">view the archive</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- LatestWorks Section End -->
+
+                    <!-- Footer Section Start -->
+                    <footer id="footer">
+                        <div class="footerLogo">
+                            <h1 class="logo" id="Flogo">
+                                <a href="#content">
+                                    <img src="images/MS_f2_white.svg" height="120px" alt="logo" /></a>
+                            </h1>
+                        </div>
+                        <div class="footerSocial">
+                            <ul class="social_connect">
+                                <li>
+                                    <a href="skype:sojitra.mihir24?chat" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-skype.svg" alt="skype" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mihir-sojitra-65269437/" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-linkedin.svg" alt="linkedin" /></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:mihir.sojitra24@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-mailsign.svg" alt="Email" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/918347275035?text=I'm%20interested%20in%20your%20profile%20for%20projects" rel="noopener noreferrer"><img src="images/reshot-icon-whatsapp.svg" alt="whatsapp" /></a>
+                                </li>
+                                <!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="copyright_text">Designed & Built by Mihir Sojitra</div>
+                    </footer>
+                    <!-- Footer Section End -->
+
+                </div>
+                <span class="tags bottom-tags"> <br> &lt;/html&gt;</span>
+            </div>
+        </div>
+        <!-- Page END -->
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
