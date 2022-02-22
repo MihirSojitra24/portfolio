@@ -61,6 +61,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <!-- <link rel="stylesheet" type="text/css" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"> -->
+
     <link rel="stylesheet" type="text/css" href="fonts/fonts_stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/respnsive_style.css">
@@ -90,6 +93,28 @@
 		<line x1="78" y1="24.7" x2="40.2" y2="46.5"></line>
 		</symbol>
 	</svg>
+	<!-- <svg width="0" height="0" style="display:none">
+		<symbol id="MSLogo" viewBox="0 0 184.6 138">
+		<title>Mihir Sojitra's Logo</title>
+			<g clip-path="url(#clip0_0_1)">
+		        <rect width="260" height="141" fill=""/>
+		        <path d="M444 -149H-185V290H444V-149Z" fill=""/>
+		        <path d="M444 -149H-185V290H444V-149Z" fill=""/>
+		        <path d="M260 -8H-2V148H260V-8Z" fill=""/>
+		        <path d="M261 -8H-1V148H261V-8Z" fill=""/>
+		        <path d="M116 92L152.5 114" stroke="" stroke-width="2"/>
+		        <path d="M152 27L80 71M5.5 114L42 92M5.5 70L42.376 47.896" stroke="" stroke-width="2"/>
+		        <path d="M152.75 70.8C138.398 62.287 130.352 57.513 116 49" stroke="" stroke-width="2"/>
+		        <path d="M253 113.5C238.648 104.987 230.352 101.013 216 92.5" stroke="" stroke-width="2"/>
+		        <path d="M6 27L81 71" stroke="" stroke-width="2"/>
+		        <path d="M42.451 5.57898L5.5 27.137V113.863L41.95 135.129V123.672V85.983V67.139V48.295V48.004L42.076 47.932M42.451 5.57898L78.999 26.846L42.202 47.86L42.076 47.932M42.451 5.57898L42.076 47.932" stroke="" stroke-width="2"/>
+		        <path d="M115.549 5.57898L152.5 27.137V113.863L116.05 135.129V123.672V49.295V49.011L115.806 48.865M115.549 5.57898L78.984 26.856L115.806 48.865M115.549 5.57898L115.806 48.865" stroke="" stroke-width="2"/>
+		        <path d="M214.7 5.577L252.499 26.8L215.45 48.167L215 48.5M214.7 5.577L215 48.5M214.7 5.577L178.5 27.088V70.111L215.949 92.633M215 48.5L253 70.689M215.949 92.633L253 70.689M215.949 92.633L179.001 113.901L215.7 135.123M215.949 92.633L215.7 135.123M253 70.689V84.1V98.6V113.611L215.7 135.123" stroke="" stroke-width="2"/>
+		        <path d="M214.5 48.5L178.5 27" stroke="" stroke-width="2"/>
+		        <path d="M179 69.8L215 48.5" stroke="" stroke-width="2"/>
+		    </g>
+		</symbol>
+	</svg> -->
 	<svg width="0" height="0" style="display:none">
 		<symbol id="MSLogo2" viewBox="0 0 184.6 138">
 		<title>Mihir Sojitra's Logo</title>
@@ -109,6 +134,9 @@
 	<div id="introAnim" class="introAnim preloader" role="presentation">
 		<div class="progress_body">
 			<div class="progress_svg">
+				<!-- <svg id="introAnim0" x="0" y="0" width="184.6px" height="138px" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+					<use xlink:href="#MSLogo2"></use>
+				</svg> -->
 				<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
 				<!-- MS -->
 			</div>
@@ -116,9 +144,21 @@
 			<div class="progress-bar"><div class="progress-bar_bg"><div></div></div></div>
 		</div>
 	</div>
-
+    
+    <script>
+	    // (function() {
+	    //     if (!window.TweenMax) {
+	    //         document.write("<script src='js/plugins/tweenmax.js'><\/script>");
+	    //     }
+	    //     if (!window.jQuery) {
+	    //         document.write("<script src='js/plugins/jquery-3.1.1.min.js'><\/script>");
+	    //     }
+	    // })();
+    </script>
+    <!-- <script src="js/init.js"></script> -->
 
     <div id="content" class="page">
+    	<!-- <div class="mover"><div class="moverDot"></div></div> -->
 	    <!-- Header Section Start -->
 	    <header class="stickyHeader">
     		<button class="themeChangeBtn" onclick="toggleColors()"><img src="images/bg_icons/reshot-icon13.svg" alt="icn"/></button>
@@ -126,6 +166,10 @@
 	    	<div class="main_headerBar">
 	    		<div class="my_wrapper">
 	    			<h1 class="logo" id="logo">
+	    				<!-- <svg id="mainLogo" x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+							<title>Mihir Sojitra's Logo</title>
+							<use xlink:href="#MSLogo"></use>
+						</svg> -->
 						<a href="#content">
 						<img src="images/MS_f2_white.svg" alt="logo" /></a>
 						<!-- MS -->
@@ -142,6 +186,13 @@
 	    	
 	    	<div class="mainMenu_nav">
 	    		<ul class="mainMenu_navUl">
+	    			<!-- <li><a href="#home_section">Abcws</a><span></span></li>
+	    			<li><a href="#about_section">Cdef</a><span></span></li>
+	    			<li><a href="#skill_section">Edfee</a><span></span></li>
+	    			<li><a href="#experience_section">Ewsfe</a><span></span></li>
+	    			<li><a href="#projects_section">Fedfe</a><span></span></li>
+	    			<li><a href="#footer">Ewsede</a><span></span></li> -->
+
 	    			<li><a href="#content">Home</a><span></span></li>
 	    			<li><a href="#about_section">About</a><span></span></li>
 	    			<li><a href="#skill_section">Skills</a><span></span></li>
@@ -178,10 +229,21 @@
     						<!-- <li><a href="https://www.facebook.com/mihir.sojitra24Cool" rel="noopener noreferrer" target="_blank"><img src="images/reshot-icon-facebook.svg" alt="facebook"/></a></li> -->
     					</ul>
 	    				<div class="sec_wrapper " >
+	    					<!-- <div class="home_section_logo">
+	    						<svg id="mainLogo" x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+									<title>Mihir Sojitra's Logo</title>
+									<use xlink:href="#MSLogo"></use>
+								</svg>
+								<img src="images/MS_f2_white.svg" height="80px" alt="logo" />
+								MS
+	    					</div> -->
 	    					<div class="text-zone">
 	    						<h1 aria-label=" Hello, my name is Mihir Sojitra, UI/UX Developer" class="">
+	    							<!-- dwdw <br/> dwd <br/> testing -->
+	    							<!-- Hello, my name is<br/> Mihir Sojitra. <br/>UI/UX Developer. -->
 	    							  Hey, <br/> I’m Mihir Sojitra. <br/>UI/UX Developer.
 	    						</h1>
+	    						<!-- <p>rfgerg gg reger </p> -->
 	    						<p> I'm a Sr. Executive Designer specializing in <b>creative UI/UX Development</b> with <b>Front-End Developement skills</b> + <b>Front-End WordPress Dev.</b> and <b>Freelancer</b>. You can read a bit more about me over <a href="#about_section" rel="contact noopener noreferrer">here.</a></p>
 	    						<a href="mailto:mihir.sojitra24@gmail.com" rel="contact noopener noreferrer" class="btn_design">Say Hello 👉</a>
 	    					</div>
@@ -204,16 +266,24 @@
 	    					<div class="sec_bigText">About</div>
 							<div class="text-zone ">
 								<div class="sec_ttl">
+									<!-- <h2 aria-label="Me, Myself & I" class=""> My panel</h2> -->
 									<h2 aria-label="Me, Myself & I" class=""> About Me</h2>
+		    						<!-- <p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p> -->
 		    						<p>Hi, My name is Mihir, located in India and I enjoy creating things that live on the internet. My interest in web designing started back in 2015 when I decided to try editing custom Websites to help businesses do better online. — turns out Front-End and create custom websites taught me a lot about HTML, CSS, JS, jQuery, Wordpres, Drupal, Angular Material & Angular! I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
 		    						<p>Fast-forward to today, and I’ve had the privilege of working at a <a href="http://www.medma.net" target="_blank" rel="contact noopener noreferrer">next generation technology company</a>, a <a href="https://discus.solutions/" target="_blank" rel="contact noopener noreferrer">Business Services company</a>, and a <a href="https://www.zealousys.com/" target="_blank" rel="contact noopener noreferrer">leading mobile & web development company</a>. My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://www.onlinepsbloans.com/" target="_blank" rel="contact noopener noreferrer">Online PSB Loans Limited - India's Largest Lending Fintech Company</a> for a variety of clients.</p>
 
 		    						<p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of Health & Fitness, Love to travel, Web series and Movies. A family person,</p>
+		    						<!-- <p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p> -->
 		    						<p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
 		    						<p>I currently work in India's Largest Lending Fintech Company incorporated with an objective to provide advanced technology-based financial innovations and solutions and work remotely with a selected freelance client base being open for new opportunities.</p>
 
 		    						<p><a rel="contact noopener noreferrer" href="#footer">Let’s make something special.</a></p>
 		    					</div>
+	    						<!-- <div class="sec_btns">
+		    						<a href="#skill_section" rel="See more noopener noreferrer" class="btn_design box-1">See more!</a>
+		    					</div> -->
 	    					</div>
 						</div>
 					</section>
@@ -225,6 +295,7 @@
 	    					<div class="sec_bigText">Skills</div>
 							<div class="text-zone">
 								<div class="sec_ttl">
+		    						<!-- <h2 aria-label="My Skills" class=""> My panel 2</h2> -->
 		    						<h2 aria-label="My Skills" class=""> My Skills</h2>
 		    						<p>Since beginning my journey as a UI/UX developer nearly 6 years, I’ve done directly and remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.</p>
 		    						<p>I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium websites, blog sites, customization wordpress projects , features, animations, and coding interactive layouts.</p>
@@ -232,6 +303,8 @@
 		    						<p>Visit my <a rel="LinkedIn noopener noreferrer" href="https://www.linkedin.com/in/mihir-sojitra-65269437/" target="_blank">LinkedIn</a> profile for more details or just <a rel="contact noopener noreferrer" href="#footer">contact</a> me.</p>
 		    						<p>Here are a few technologies I’ve been working with recently:</p>
 
+		    						<!-- <p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p> -->
 		    					</div>
     					
 	    					</div>
@@ -269,6 +342,7 @@
 	    					<div class="sec_bigText">Projects</div>
 							<div class="text-zone">
 								<div class="sec_ttl">
+		    						<!-- <h2 aria-label="My Portfolio" class=""> Listing..</h2> -->
 		    						<h2 aria-label="Latest Works" class=""> Some Things I’ve Built</h2>
 		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.<br> Interested to see some more?  Visit <a rel="work noopener noreferrer" href="portfolio.html">my work</a> page.</p>
 		    					</div>
@@ -298,7 +372,17 @@
 					        <img src="images/bg_icons/reshot-icon16.svg" height="50px" data-speed="2" class="layer icon16" alt="icon" />
 					        <img src="images/bg_icons/reshot-icon17.svg" height="50px" data-speed="2" class="layer icon17" alt="icon" />
 					    </div>
+	    				<!-- <div class="sec_bigText">Projects</div> -->
 	    				<div class="sec_wrapper">
+							<!-- <div class="text-zone">
+								<div class="sec_ttl">
+		    						<h2 aria-label="Latest Works" class=""> Latest Works</h2>
+
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    					</div>
+    					
+	    					</div> -->
 	    					<div class="latestWorks_list">
 	    						<ul class="latestWorks_list_inner">
 	    							<li>
@@ -414,12 +498,90 @@
 					</section>
 					<!-- LatestWorks Section End -->
 
+					
+
+					<!-- Experience Section Start -->
+					<!-- <section class="experience_section section_full hide" id="experience_section"> -->
+						<!-- <div class="sec_bigText">Exp</div>
+	    				<div class="sec_wrapper">
+							<div class="text-zone">
+								<div class="sec_ttl">
+		    						<h2 aria-label="My Skills" class=""> My panel 2</h2>
+		    						<h2 aria-label="My Skills" class=""> My Experience</h2>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    						<p>A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.</p>
+		    					</div>   					
+	    					</div>
+    					</div> -->
+    					<!-- <div class="timeline-container" id="timeline-1">
+    						<div class="sec_bigText">Exp</div>
+						  <div class="timeline-header">
+						    <h2 class="timeline-header__title">Mustafa Kemal Atatürk</h2>
+						    <h3 class="timeline-header__subtitle">FATHER OF THE TURKS</h3>
+						  </div>
+						  <div class="timeline">
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1881</h2>
+						        <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed woman, raised him and his sister.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+						        <h2 class="timeline__content-title">1893</h2>
+						        <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's superior achievement.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+						        <h2 class="timeline__content-title">1905</h2>
+						        <p class="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1908</h2>
+						        <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in Salonica andIstanbul and as a military attache in Sofia.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
+						        <h2 class="timeline__content-title">1915</h2>
+						        <p class="timeline__content-desc">In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive victories and finally repelling the invaders.</p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
+						        <h2 class="timeline__content-title">1934</h2>
+						        <p class="timeline__content-desc">
+						          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+						          In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
+						        </p>
+						      </div>
+						    </div>
+						    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+						      <div class="timeline__content text-zone"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+						        <h2 class="timeline__content-title">1938</h2>
+						        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div> -->
+					<!-- </section> -->
+					<!-- Experience Section End -->
+
+
 					<!-- Footer Section Start -->
 					<footer id="footer">
 						<div class="footerLogo">
 							<h1 class="logo" id="Flogo">
+			    				<!-- <svg  x="0" y="0" viewBox="0 0 184.6 138" preserveAspectRatio="xMidYMid meet">
+									<title>Mihir Sojitra's Logo</title>
+									<use xlink:href="#MSLogo"></use>
+								</svg> -->
 								<a href="#content">
 								<img src="images/MS_f2_white.svg" height="120px" alt="logo" /></a>
+								<!-- MS -->
 			    			</h1>
 						</div>
 						<div class="footerSocial">
@@ -443,6 +605,7 @@
 	</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
 
     <!-- Blast Animtion -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
