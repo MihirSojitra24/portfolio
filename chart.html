@@ -1,0 +1,681 @@
+<style type="text/css">
+  .dashboard_page {
+    float: left;
+    width: 100%;
+    background: #f0f2f5;
+}
+.selectDate_row {
+    float: left;
+    width: 100%;
+    padding: 20px 25px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+  .dashboard_charts_sec {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+        padding:20px;
+    box-sizing: border-box;
+  }
+.dashboard_charts_sec_wrapper {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .dashboard_charts_sec_wrapper .charts_box {
+        padding: 10px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+        box-sizing: border-box;
+}
+  .charts_boxBody {
+    border-radius: 6px;
+    background: #ffff;
+    box-shadow: 0 6px 12px 0 rgb(145 159 167 / 18%);
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+        height: 100%;
+}
+.charts_box_ttl {
+    padding: 18px;
+    border-bottom: solid 1px rgba(145,159,167,0.18);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+        align-items: center;
+}
+.charts_box_dtls {
+    padding: 18px;
+    border-bottom: solid 1px rgba(145,159,167,0.18);
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.charts_box_ttl .leftdtl {
+    width: 70%;
+    color: #4d4f5c;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.charts_box_ttl .leftdtl i {
+    margin-left: 5px;
+}
+.charts_container {
+    float: left;
+    width: 100%;
+}
+.charts_box_Ftrdtls {
+    padding: 18px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.charts_box_Ftrdtls .leftdtl {
+    width: 70%;
+    color: #4d4f5c;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.charts_box_Ftrdtls .rightDtl {
+    float: right;
+        text-align: right;
+}
+.charts_box_Ftrdtls .info_title {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #6f7d85;
+}
+.charts_box_Ftrdtls .leftdtl h3 {
+    margin: 0;
+        padding-top: 6px;
+}
+.charts_box_Ftrdtls .leftdtl h3 p {
+    float: left;
+    margin: 0;
+    font-size: 22px;
+    align-items: center;
+    font-weight: 900;
+    color: #262d30;
+}
+.charts_box_Ftrdtls .leftdtl h3 span {
+    float: left;
+    padding-left: 10px;
+    color: red;
+    font-size: 12px;
+        padding-top: 5px;
+}
+.dashboard_topCard_Sec {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dashboard_topCard_Sec_wrapper {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.dashboard_topCard_Sec_wrapper .card_Col {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;padding: 10px;
+}
+
+.dashboard_topCard_Sec_wrapper .card_Col .cardCol_body {
+    border: 1px solid #e8e8e8;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: rgba(0,0,0,0.65);
+    padding: 24px 15px;
+}
+.dashboard_topCard_Sec_wrapper .card_Col .cardCol_body:hover {
+    border-color: rgba(0,0,0,0.09);
+    -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
+}
+.dashboard_topCard_Sec_wrapper .card_Col .cardCol_body h4 {
+    margin-bottom: 4px;
+    color: rgba(0,0,0,0.45);
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.dashboard_topCard_Sec_wrapper .card_Col .cardCol_body h3 {
+    color: rgb(21, 28, 75);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    line-height: normal;
+}
+.dashboard_topCard_Sec_wrapper .card_Col .cardCol_body h3 span {
+    margin-right: 5px;
+}
+.charts_box_Ftrdtls .rightDtl p {
+    margin: 0;
+    padding: 5px 0;
+    color: rgba(0,0,0,0.65);
+    font-size: 14px;
+}
+</style>
+<div class="dashboard_page">
+  <div class="selectDate_row">
+    <select class="form-control">
+      <option>1 Days</option>
+      <option>2 Days</option>
+      <option>3 Days</option>
+      <option>4 Days</option>
+      <option>5 Days</option>
+      <option>6 Days</option>
+    </select>
+  </div>
+
+  <div class="dashboard_topCard_Sec">
+    <div class="dashboard_topCard_Sec_wrapper">
+      <div class="card_Col">
+        <div class="cardCol_body">
+          <h4>Not Overdue</h4>
+          <h3><span>Rs</span>0</h3>
+        </div>
+      </div>
+      <div class="card_Col">
+        <div class="cardCol_body">
+          <h4>1 - 15 Days</h4>
+          <h3><span>Rs</span>74,358</h3>
+        </div>
+      </div>
+      <div class="card_Col">
+        <div class="cardCol_body">
+          <h4>16 - 30 Days</h4>
+          <h3><span>Rs</span>0</h3>
+        </div>
+      </div>
+      <div class="card_Col">
+        <div class="cardCol_body">
+          <h4>31 - 45 Days</h4>
+          <h3><span>Rs</span>74,358</h3>
+        </div>
+      </div>
+      <div class="card_Col">
+        <div class="cardCol_body">
+          <h4>> 45 Days</h4>
+          <h3><span>Rs</span>0</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard_charts_sec">
+    <div class="dashboard_charts_sec_wrapper">
+      <div class="charts_box">
+        <div class="charts_boxBody">
+          <div class="charts_box_ttl">
+              <div class="leftdtl">
+                Outstanding Amount <i aria-label="icon: question-circle" class="anticon anticon-question-circle ant-tooltip-open"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0 1 30.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path></svg></i>
+              </div>
+              <div class="rightDtl">
+                <select class="form-control">
+                  <option>Past 6 Months</option>
+                  <option>Past 12 Months</option>
+                </select>
+              </div>
+          </div>
+          <div class="charts_box_dtls">
+            <div class="charts_container">
+              <canvas id="canvas1"></canvas>
+            </div>
+          </div>
+          <div class="charts_box_Ftrdtls">
+              <div class="leftdtl">
+                  <div class="info_title">TOTAL OUTSTANDING AMOUNT</div>
+                  <h3><p>₹ 74,358</p> <span>▲ 0.00 %</span></h3>
+              </div>
+              <div class="rightDtl">
+                  <div class="info_title">DATE</div>
+                  <p>05/04/2022</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="charts_box">
+        <div class="charts_boxBody">
+          <div class="charts_box_ttl">
+              <div class="leftdtl">
+                Average Collection Period <i aria-label="icon: question-circle" class="anticon anticon-question-circle ant-tooltip-open"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0 1 30.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path></svg></i>
+              </div>
+              <div class="rightDtl">
+                <select class="form-control">
+                  <option>Past 6 Months</option>
+                  <option>Past 12 Months</option>
+                </select>
+              </div>
+          </div>
+          <div class="charts_box_dtls">
+            <div class="charts_container">
+              <canvas id="canvas2"></canvas>
+            </div>
+          </div>
+          <div class="charts_box_Ftrdtls">
+              <div class="leftdtl">
+                  <div class="info_title">RECOVERY THIS MONTH</div>
+                  <h3><p>78 days</p> <span>▲ 0.00 %</span></h3>
+              </div>
+              <!-- <div class="rightDtl">
+                  <div class="info_title">DATE</div>
+                  <p>05/04/2022</p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="charts_box">
+        <div class="charts_boxBody">
+          <div class="charts_box_ttl">
+              <div class="leftdtl">
+                Sales Trend <i aria-label="icon: question-circle" class="anticon anticon-question-circle ant-tooltip-open"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0 1 30.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path></svg></i>
+              </div>
+              <div class="rightDtl">
+                <select class="form-control">
+                  <option>Past 6 Months</option>
+                  <option>Past 12 Months</option>
+                </select>
+              </div>
+          </div>
+          <div class="charts_box_dtls">
+            <div class="charts_container">
+              <canvas id="canvas3"></canvas>
+            </div>
+          </div>
+          <div class="charts_box_Ftrdtls">
+              <div class="leftdtl">
+                  <div class="info_title">SALES THIS MONTH</div>
+                  <h3><p>₹ 0</p> <span>▲ 0.00 %</span></h3>
+              </div>
+              <!-- <div class="rightDtl">
+                  <div class="info_title">DATE</div>
+                  <p>05/04/2022</p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="charts_box">
+        <div class="charts_boxBody">
+          <div class="charts_box_ttl">
+              <div class="leftdtl">
+                Collection <i aria-label="icon: question-circle" class="anticon anticon-question-circle ant-tooltip-open"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0 1 30.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path></svg></i>
+              </div>
+              <div class="rightDtl">
+                <select class="form-control">
+                  <option>Past 6 Months</option>
+                  <option selected>Past 12 Months</option>
+                </select>
+              </div>
+          </div>
+          <div class="charts_box_dtls">
+            <div class="charts_container">
+              <canvas id="canvas4"></canvas>
+            </div>
+          </div>
+          <div class="charts_box_Ftrdtls">
+              <div class="leftdtl">
+                  <div class="info_title">RECOVERY THIS MONTH</div>
+                  <h3><p>₹ 0</p> <span>▲ 0.00 %</span></h3>
+              </div>
+              <!-- <div class="rightDtl">
+                  <div class="info_title">DATE</div>
+                  <p>05/04/2022</p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+<script>
+
+// CHART canvas1 JS START
+
+var chartColors = {
+  red: 'rgb(255, 99, 132)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(231,233,237)'
+};
+
+var randomScalingFactor = function() {
+  return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+}
+var MONTHS = ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+var config = {
+  type: 'line',
+  data: {
+    labels: ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+    datasets: [ {
+      label: "Outstanding Amount",
+      fill: true,
+      backgroundColor: "#4bc0c047",
+      borderColor: "#4BC0C0",
+      data: [
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9,
+        74357.9
+      ],
+    }]
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart'
+    },
+    tooltips: {
+      mode: 'label',
+    },
+    hover: {
+      mode: 'nearest',
+      intersect: true
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+          display: false,
+          labelString: ''
+        }
+      }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: false,
+          labelString: ''
+        }
+      }]
+    }
+  }
+};
+
+
+var ctx = document.getElementById("canvas1").getContext("2d");
+window.myLine = new Chart(ctx, config);
+
+// CHART canvas1 JS END
+
+
+
+// CHART canvas2 JS START
+
+var chartColors = {
+  red: 'rgb(255, 99, 132)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(231,233,237)'
+};
+
+var randomScalingFactor = function() {
+  return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+}
+var MONTHS = ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+var config = {
+  type: 'line',
+  data: {
+    labels: ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+    datasets: [ {
+      label: "Collections",
+      fill: false,
+      backgroundColor: "#DBF2F2",
+      borderColor: "#4BC0C0",
+      data: [
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35,
+        77.35
+      ],
+    }]
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart'
+    },
+    tooltips: {
+      mode: 'label',
+    },
+    hover: {
+      mode: 'nearest',
+      intersect: true
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }]
+    }
+  }
+};
+
+
+var ctx = document.getElementById("canvas2").getContext("2d");
+window.myLine = new Chart(ctx, config);
+
+// CHART canvas2 JS END
+
+
+// CHART canvas3 JS START
+
+var chartColors = {
+  red: 'rgb(255, 99, 132)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(231,233,237)'
+};
+
+var randomScalingFactor = function() {
+  return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+}
+var MONTHS = ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+var config = {
+  type: 'line',
+  data: {
+    labels: ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+    datasets: [ {
+      label: "Collections",
+      fill: false,
+      backgroundColor: "#DBF2F2",
+      borderColor: "#4BC0C0",
+      data: [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+    }]
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart'
+    },
+    tooltips: {
+      mode: 'label',
+    },
+    hover: {
+      mode: 'nearest',
+      intersect: true
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }]
+    }
+  }
+};
+
+
+var ctx = document.getElementById("canvas3").getContext("2d");
+window.myLine = new Chart(ctx, config);
+
+// CHART canvas3 JS END
+
+
+// CHART canvas4 JS START
+
+var chartColors = {
+  red: 'rgb(255, 99, 132)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(231,233,237)'
+};
+
+var randomScalingFactor = function() {
+  return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+}
+var MONTHS = ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+var config = {
+  type: 'line',
+  data: {
+    labels: ["May", "Jun", "Jul", "Augt", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+    datasets: [ {
+      label: "Collections",
+      fill: false,
+      backgroundColor: "#DBF2F2",
+      borderColor: "#4BC0C0",
+      data: [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+    }]
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart'
+    },
+    tooltips: {
+      mode: 'label',
+    },
+    hover: {
+      mode: 'nearest',
+      intersect: true
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          display: true,
+          labelString: ''
+        }
+      }]
+    }
+  }
+};
+
+
+var ctx = document.getElementById("canvas4").getContext("2d");
+window.myLine = new Chart(ctx, config);
+
+// CHART canvas4 JS END
+
+</script>
